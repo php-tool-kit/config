@@ -1,0 +1,30 @@
+
+##teamcity[testCount count='4' flowId='6268']
+
+##teamcity[testSuiteStarted name='default' flowId='6268']
+
+##teamcity[testSuiteStarted name='ConfMgr\Test\ConfigLoaderTest' locationHint='php_qn://C:\Users\Everton\Documents\ConfMgr\tests\ConfigLoaderTest.php::\ConfMgr\Test\ConfigLoaderTest' flowId='6268']
+
+##teamcity[testStarted name='testLoadIniFile' locationHint='php_qn://C:\Users\Everton\Documents\ConfMgr\tests\ConfigLoaderTest.php::\ConfMgr\Test\ConfigLoaderTest::testLoadIniFile' flowId='6268']
+
+##teamcity[testFinished name='testLoadIniFile' duration='7' flowId='6268']
+
+##teamcity[testSuiteFinished name='ConfMgr\Test\ConfigLoaderTest' flowId='6268']
+
+##teamcity[testSuiteStarted name='ConfMgr\Test\ConfigRepoTest' locationHint='php_qn://C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php::\ConfMgr\Test\ConfigRepoTest' flowId='6268']
+
+##teamcity[testStarted name='testGetMethodSuccess' locationHint='php_qn://C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php::\ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess' flowId='6268']
+
+##teamcity[testFinished name='testGetMethodSuccess' duration='1' flowId='6268']
+
+##teamcity[testStarted name='testGetMagicMethodSuccess' locationHint='php_qn://C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php::\ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess' flowId='6268']
+
+##teamcity[testFinished name='testGetMagicMethodSuccess' duration='1' flowId='6268']
+
+##teamcity[testStarted name='testListMethodSuccess' locationHint='php_qn://C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php::\ConfMgr\Test\ConfigRepoTest::testListMethodSuccess' flowId='6268']
+
+##teamcity[testFinished name='testListMethodSuccess' duration='2' flowId='6268']
+
+##teamcity[testSuiteFinished name='ConfMgr\Test\ConfigRepoTest' flowId='6268']
+
+##teamcity[testSuiteFinished name='default' flowId='6268']

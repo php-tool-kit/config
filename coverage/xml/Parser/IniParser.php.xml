@@ -1,0 +1,318 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="IniParser.php" path="\Parser">
+    <totals>
+      <lines total="54" comments="28" code="26" executable="7" executed="5" percent="71.43"/>
+      <methods count="2" tested="0" percent="0.00"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="1" tested="0" percent="0.00"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <class name="ConfMgr\Parser\IniParser" start="34" executable="7" executed="5" crap="4.37">
+      <namespace name="ConfMgr\Parser"/>
+      <method name="__construct" signature="__construct(string $source)" start="38" end="44" crap="2.06" executable="4" executed="3" coverage="75"/>
+      <method name="parse" signature="parse(): array" start="46" end="52" crap="2.15" executable="3" executed="2" coverage="66.666666666667"/>
+    </class>
+    <coverage>
+      <line nr="39">
+        <covered by="ConfMgr\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testListMethodSuccess"/>
+      </line>
+      <line nr="43">
+        <covered by="ConfMgr\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testListMethodSuccess"/>
+      </line>
+      <line nr="44">
+        <covered by="ConfMgr\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testListMethodSuccess"/>
+      </line>
+      <line nr="47">
+        <covered by="ConfMgr\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testListMethodSuccess"/>
+      </line>
+      <line nr="51">
+        <covered by="ConfMgr\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="ConfMgr\Test\ConfigRepoTest::testListMethodSuccess"/>
+      </line>
+    </coverage>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2"/>
+      <line no="3">
+        <token name="T_COMMENT">/*</token>
+      </line>
+      <line no="4">
+        <token name="T_COMMENT"> * The MIT License</token>
+      </line>
+      <line no="5">
+        <token name="T_COMMENT"> *</token>
+      </line>
+      <line no="6">
+        <token name="T_COMMENT"> * Copyright 2021 Everton.</token>
+      </line>
+      <line no="7">
+        <token name="T_COMMENT"> *</token>
+      </line>
+      <line no="8">
+        <token name="T_COMMENT"> * Permission is hereby granted, free of charge, to any person obtaining a copy</token>
+      </line>
+      <line no="9">
+        <token name="T_COMMENT"> * of this software and associated documentation files (the "Software"), to deal</token>
+      </line>
+      <line no="10">
+        <token name="T_COMMENT"> * in the Software without restriction, including without limitation the rights</token>
+      </line>
+      <line no="11">
+        <token name="T_COMMENT"> * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</token>
+      </line>
+      <line no="12">
+        <token name="T_COMMENT"> * copies of the Software, and to permit persons to whom the Software is</token>
+      </line>
+      <line no="13">
+        <token name="T_COMMENT"> * furnished to do so, subject to the following conditions:</token>
+      </line>
+      <line no="14">
+        <token name="T_COMMENT"> *</token>
+      </line>
+      <line no="15">
+        <token name="T_COMMENT"> * The above copyright notice and this permission notice shall be included in</token>
+      </line>
+      <line no="16">
+        <token name="T_COMMENT"> * all copies or substantial portions of the Software.</token>
+      </line>
+      <line no="17">
+        <token name="T_COMMENT"> *</token>
+      </line>
+      <line no="18">
+        <token name="T_COMMENT"> * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</token>
+      </line>
+      <line no="19">
+        <token name="T_COMMENT"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</token>
+      </line>
+      <line no="20">
+        <token name="T_COMMENT"> * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</token>
+      </line>
+      <line no="21">
+        <token name="T_COMMENT"> * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</token>
+      </line>
+      <line no="22">
+        <token name="T_COMMENT"> * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</token>
+      </line>
+      <line no="23">
+        <token name="T_COMMENT"> * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN</token>
+      </line>
+      <line no="24">
+        <token name="T_COMMENT"> * THE SOFTWARE.</token>
+      </line>
+      <line no="25">
+        <token name="T_COMMENT"> */</token>
+      </line>
+      <line no="26"/>
+      <line no="27">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">ConfMgr</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Parser</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="28"/>
+      <line no="29">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="30">
+        <token name="T_DOC_COMMENT"> * Description of IniParser</token>
+      </line>
+      <line no="31">
+        <token name="T_DOC_COMMENT"> *</token>
+      </line>
+      <line no="32">
+        <token name="T_DOC_COMMENT"> * @author Everton</token>
+      </line>
+      <line no="33">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="34">
+        <token name="T_CLASS">class</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">IniParser</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IMPLEMENTS">implements</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">ParserInterface</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="35">
+        <token name="T_WHITESPACE">    </token>
+      </line>
+      <line no="36">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$ini_file</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="37"/>
+      <line no="38">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">__construct</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$source</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="39">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_STRING">file_exists</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$source</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="40">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_THROW">throw</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">UnexpectedValueException</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$source</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="41">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="42">
+        <token name="T_WHITESPACE">        </token>
+      </line>
+      <line no="43">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">ini_file</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$source</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="44">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="45"/>
+      <line no="46">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">parse</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="47">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$data</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">parse_ini_file</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">ini_file</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">true</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">INI_SCANNER_TYPED</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_IDENTICAL">===</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">false</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="48">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_THROW">throw</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Exception</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$source</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="49">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="50">
+        <token name="T_WHITESPACE">        </token>
+      </line>
+      <line no="51">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$data</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="52">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="53"/>
+      <line no="54">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="55"/>
+    </source>
+  </file>
+</phpunit>

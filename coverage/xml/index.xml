@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <build time="Tue Apr 6 20:13:37 UTC 2021" phpunit="9.5.0" coverage="9.2.6">
+    <runtime name="PHP" version="7.4.12" url="https://secure.php.net/"/>
+    <driver name="xdebug" version="3.0.3"/>
+  </build>
+  <project source="C:\Users\Everton\Documents\ConfMgr\src">
+    <tests>
+      <test name="ConfMgr\Test\ConfigLoaderTest::testLoadIniFile" size="unknown" result="0" status="PASSED"/>
+      <test name="ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess" size="unknown" result="0" status="PASSED"/>
+      <test name="ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess" size="unknown" result="0" status="PASSED"/>
+      <test name="ConfMgr\Test\ConfigRepoTest::testListMethodSuccess" size="unknown" result="0" status="PASSED"/>
+    </tests>
+    <directory name="/">
+      <totals>
+        <lines total="372" comments="210" code="162" executable="35" executed="31" percent="88.57"/>
+        <methods count="11" tested="7" percent="63.64"/>
+        <functions count="0" tested="0" percent="0"/>
+        <classes count="4" tested="1" percent="25.00"/>
+        <traits count="0" tested="0" percent="0"/>
+      </totals>
+      <directory name="Config">
+        <totals>
+          <lines total="103" comments="55" code="48" executable="9" executed="8" percent="88.89"/>
+          <methods count="4" tested="3" percent="75.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="1" tested="0" percent="0.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="ConfigRepo.php" href="Config/ConfigRepo.php.xml">
+          <totals>
+            <lines total="62" comments="28" code="34" executable="9" executed="8" percent="88.89"/>
+            <methods count="4" tested="3" percent="75.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="ConfigRepoInterface.php" href="Config/ConfigRepoInterface.php.xml">
+          <totals>
+            <lines total="41" comments="27" code="14" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="Indexer">
+        <totals>
+          <lines total="98" comments="55" code="43" executable="10" executed="10" percent="100.00"/>
+          <methods count="3" tested="3" percent="100.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="1" tested="1" percent="100.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="IndexerInterface.php" href="Indexer/IndexerInterface.php.xml">
+          <totals>
+            <lines total="37" comments="27" code="10" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="StringKeyIndexer.php" href="Indexer/StringKeyIndexer.php.xml">
+          <totals>
+            <lines total="61" comments="28" code="33" executable="10" executed="10" percent="100.00"/>
+            <methods count="3" tested="3" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="Loader">
+        <totals>
+          <lines total="79" comments="45" code="34" executable="9" executed="8" percent="88.89"/>
+          <methods count="2" tested="1" percent="50.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="1" tested="0" percent="0.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="ConfigLoader.php" href="Loader/ConfigLoader.php.xml">
+          <totals>
+            <lines total="79" comments="45" code="34" executable="9" executed="8" percent="88.89"/>
+            <methods count="2" tested="1" percent="50.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="Parser">
+        <totals>
+          <lines total="92" comments="55" code="37" executable="7" executed="5" percent="71.43"/>
+          <methods count="2" tested="0" percent="0.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="1" tested="0" percent="0.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="IniParser.php" href="Parser/IniParser.php.xml">
+          <totals>
+            <lines total="54" comments="28" code="26" executable="7" executed="5" percent="71.43"/>
+            <methods count="2" tested="0" percent="0.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="ParserInterface.php" href="Parser/ParserInterface.php.xml">
+          <totals>
+            <lines total="38" comments="27" code="11" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+    </directory>
+  </project>
+</phpunit>

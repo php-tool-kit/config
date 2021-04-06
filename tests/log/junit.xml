@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="4" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.010809">
+    <testsuite name="default" tests="4" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.010809">
+      <testsuite name="ConfMgr\Test\ConfigLoaderTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigLoaderTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.006619">
+        <testcase name="testLoadIniFile" class="ConfMgr\Test\ConfigLoaderTest" classname="ConfMgr.Test.ConfigLoaderTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigLoaderTest.php" line="36" assertions="1" time="0.006619"/>
+      </testsuite>
+      <testsuite name="ConfMgr\Test\ConfigRepoTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php" tests="3" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.004190">
+        <testcase name="testGetMethodSuccess" class="ConfMgr\Test\ConfigRepoTest" classname="ConfMgr.Test.ConfigRepoTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php" line="36" assertions="1" time="0.001472"/>
+        <testcase name="testGetMagicMethodSuccess" class="ConfMgr\Test\ConfigRepoTest" classname="ConfMgr.Test.ConfigRepoTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php" line="42" assertions="1" time="0.000879"/>
+        <testcase name="testListMethodSuccess" class="ConfMgr\Test\ConfigRepoTest" classname="ConfMgr.Test.ConfigRepoTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php" line="48" assertions="2" time="0.001838"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

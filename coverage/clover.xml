@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1617740016">
+  <project timestamp="1617740016">
+    <file name="C:\Users\Everton\Documents\ConfMgr\src\Config\ConfigRepo.php">
+      <class name="ConfMgr\Config\ConfigRepo" namespace="global">
+        <metrics complexity="6" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="8" elements="13" coveredelements="11"/>
+      </class>
+      <line num="38" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="4"/>
+      <line num="39" type="stmt" count="4"/>
+      <line num="40" type="stmt" count="4"/>
+      <line num="43" type="stmt" count="4"/>
+      <line num="44" type="stmt" count="4"/>
+      <line num="46" type="method" name="__get" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="47" type="stmt" count="1"/>
+      <line num="50" type="method" name="get" visibility="public" complexity="2" crap="2.15" count="2"/>
+      <line num="51" type="stmt" count="2"/>
+      <line num="52" type="stmt" count="2"/>
+      <line num="55" type="stmt" count="0"/>
+      <line num="58" type="method" name="list" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="59" type="stmt" count="1"/>
+      <metrics loc="62" ncloc="34" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="8" elements="13" coveredelements="11"/>
+    </file>
+    <file name="C:\Users\Everton\Documents\ConfMgr\src\Config\ConfigRepoInterface.php">
+      <metrics loc="41" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="C:\Users\Everton\Documents\ConfMgr\src\Indexer\IndexerInterface.php">
+      <metrics loc="37" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="C:\Users\Everton\Documents\ConfMgr\src\Indexer\StringKeyIndexer.php">
+      <class name="ConfMgr\Indexer\StringKeyIndexer" namespace="global">
+        <metrics complexity="7" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="13" coveredelements="13"/>
+      </class>
+      <line num="38" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="40" type="stmt" count="4"/>
+      <line num="42" type="method" name="index" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="43" type="stmt" count="4"/>
+      <line num="45" type="stmt" count="4"/>
+      <line num="48" type="method" name="recursive" visibility="protected" complexity="5" crap="5" count="4"/>
+      <line num="49" type="stmt" count="4"/>
+      <line num="50" type="stmt" count="4"/>
+      <line num="51" type="stmt" count="4"/>
+      <line num="53" type="stmt" count="4"/>
+      <line num="54" type="stmt" count="4"/>
+      <line num="56" type="stmt" count="4"/>
+      <line num="59" type="stmt" count="4"/>
+      <metrics loc="61" ncloc="33" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="13" coveredelements="13"/>
+    </file>
+    <file name="C:\Users\Everton\Documents\ConfMgr\src\Loader\ConfigLoader.php">
+      <class name="ConfMgr\Loader\ConfigLoader" namespace="global">
+        <metrics complexity="4" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="8" elements="11" coveredelements="9"/>
+      </class>
+      <line num="46" type="method" name="load" visibility="public" complexity="2" crap="2" count="4"/>
+      <line num="48" type="stmt" count="4"/>
+      <line num="51" type="stmt" count="4"/>
+      <line num="53" type="stmt" count="4"/>
+      <line num="55" type="stmt" count="4"/>
+      <line num="57" type="stmt" count="4"/>
+      <line num="61" type="stmt" count="4"/>
+      <line num="71" type="method" name="dectectParser" visibility="protected" complexity="2" crap="2.15" count="4"/>
+      <line num="73" type="stmt" count="4"/>
+      <line num="74" type="stmt" count="4"/>
+      <line num="77" type="stmt" count="0"/>
+      <metrics loc="79" ncloc="34" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="8" elements="11" coveredelements="9"/>
+    </file>
+    <file name="C:\Users\Everton\Documents\ConfMgr\src\Parser\IniParser.php">
+      <class name="ConfMgr\Parser\IniParser" namespace="global">
+        <metrics complexity="4" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="5" elements="9" coveredelements="5"/>
+      </class>
+      <line num="38" type="method" name="__construct" visibility="public" complexity="2" crap="2.06" count="4"/>
+      <line num="39" type="stmt" count="4"/>
+      <line num="40" type="stmt" count="0"/>
+      <line num="43" type="stmt" count="4"/>
+      <line num="44" type="stmt" count="4"/>
+      <line num="46" type="method" name="parse" visibility="public" complexity="2" crap="2.15" count="4"/>
+      <line num="47" type="stmt" count="4"/>
+      <line num="48" type="stmt" count="0"/>
+      <line num="51" type="stmt" count="4"/>
+      <metrics loc="54" ncloc="26" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="5" elements="9" coveredelements="5"/>
+    </file>
+    <file name="C:\Users\Everton\Documents\ConfMgr\src\Parser\ParserInterface.php">
+      <metrics loc="38" ncloc="11" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <metrics files="7" loc="372" ncloc="162" classes="4" methods="11" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="35" coveredstatements="31" elements="46" coveredelements="38"/>
+  </project>
+</coverage>

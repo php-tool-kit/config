@@ -1,0 +1,41 @@
+{
+    "name": "php-tool-kit/conf-mgr",
+    "description": "Configuration Manager in PHP.",
+    "type": "library",
+    "keywords": ["config", "configuration"],
+    "readme": "README.md",
+    "license": "MIT Licence",
+    "authors": [
+        {
+            "name": "Everton da Rosa",
+            "email": "everton3x@gmail.com",
+            "homepage": "https://everton3x.github.io",
+            "role": "developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/php-tool-kit/ConfMgr/issues",
+        "source": "https://github.com/php-tool-kit/ConfMgr"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4.12",
+        "ext-mbstring": "*",
+        "ext-yaml": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ConfMgr\\": "src/",
+            "ConfMgr\\Test\\": "tests"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5",
+        "phpmd/phpmd": "9999999-dev",
+        "friendsofphp/php-cs-fixer": "9999999-dev",
+        "squizlabs/php_codesniffer": "*",
+        "phing/phing": "2.*",
+        "ext-fileinfo": "*"
+    }
+}

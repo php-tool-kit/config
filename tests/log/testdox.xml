@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tests>
+  <test className="ConfMgr\Test\ConfigLoaderTest" methodName="testLoadIniFile" prettifiedClassName="Config Loader (ConfMgr\Test\ConfigLoader)" prettifiedMethodName="Load ini file" status="0" time="0.0066193" size="-1" groups="Everton">
+    <group name="Everton"/>
+  </test>
+  <test className="ConfMgr\Test\ConfigRepoTest" methodName="testGetMethodSuccess" prettifiedClassName="Config Repo (ConfMgr\Test\ConfigRepo)" prettifiedMethodName="Get method success" status="0" time="0.0014719" size="-1" groups="Everton">
+    <group name="Everton"/>
+  </test>
+  <test className="ConfMgr\Test\ConfigRepoTest" methodName="testGetMagicMethodSuccess" prettifiedClassName="Config Repo (ConfMgr\Test\ConfigRepo)" prettifiedMethodName="Get magic method success" status="0" time="0.0008794" size="-1" groups="Everton">
+    <group name="Everton"/>
+  </test>
+  <test className="ConfMgr\Test\ConfigRepoTest" methodName="testListMethodSuccess" prettifiedClassName="Config Repo (ConfMgr\Test\ConfigRepo)" prettifiedMethodName="List method success" status="0" time="0.0018384" size="-1" groups="Everton">
+    <group name="Everton"/>
+  </test>
+</tests>

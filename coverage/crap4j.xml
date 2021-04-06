@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crap_result>
+  <project/>
+  <timestamp>2021-04-06 20:13:36</timestamp>
+  <stats>
+    <name>Method Crap Stats</name>
+    <methodCount>11</methodCount>
+    <crapMethodCount>0</crapMethodCount>
+    <crapLoad>0</crapLoad>
+    <totalCrap>21.51</totalCrap>
+    <crapMethodPercent>0</crapMethodPercent>
+  </stats>
+  <methods>
+    <method>
+      <package>ConfMgr\Config</package>
+      <className>ConfMgr\Config\ConfigRepo</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(array $data, ConfMgr\Indexer\IndexerInterface $indexer)</methodSignature>
+      <fullMethod>__construct(array $data, ConfMgr\Indexer\IndexerInterface $indexer)</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>ConfMgr\Config</package>
+      <className>ConfMgr\Config\ConfigRepo</className>
+      <methodName>__get</methodName>
+      <methodSignature>__get(string $key)</methodSignature>
+      <fullMethod>__get(string $key)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>ConfMgr\Config</package>
+      <className>ConfMgr\Config\ConfigRepo</className>
+      <methodName>get</methodName>
+      <methodSignature>get(string $key)</methodSignature>
+      <fullMethod>get(string $key)</fullMethod>
+      <crap>2.15</crap>
+      <complexity>2</complexity>
+      <coverage>66.67</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>ConfMgr\Config</package>
+      <className>ConfMgr\Config\ConfigRepo</className>
+      <methodName>list</methodName>
+      <methodSignature>list(): array</methodSignature>
+      <fullMethod>list(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>ConfMgr\Indexer</package>
+      <className>ConfMgr\Indexer\StringKeyIndexer</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct()</methodSignature>
+      <fullMethod>__construct()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>ConfMgr\Indexer</package>
+      <className>ConfMgr\Indexer\StringKeyIndexer</className>
+      <methodName>index</methodName>
+      <methodSignature>index(array $data): array</methodSignature>
+      <fullMethod>index(array $data): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>ConfMgr\Indexer</package>
+      <className>ConfMgr\Indexer\StringKeyIndexer</className>
+      <methodName>recursive</methodName>
+      <methodSignature>recursive(array $data, string $parentKey)</methodSignature>
+      <fullMethod>recursive(array $data, string $parentKey)</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>ConfMgr\Loader</package>
+      <className>ConfMgr\Loader\ConfigLoader</className>
+      <methodName>load</methodName>
+      <methodSignature>load(string $source): ConfMgr\Config\ConfigRepoInterface</methodSignature>
+      <fullMethod>load(string $source): ConfMgr\Config\ConfigRepoInterface</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>ConfMgr\Loader</package>
+      <className>ConfMgr\Loader\ConfigLoader</className>
+      <methodName>dectectParser</methodName>
+      <methodSignature>dectectParser(string $source): ConfMgr\Parser\ParserInterface</methodSignature>
+      <fullMethod>dectectParser(string $source): ConfMgr\Parser\ParserInterface</fullMethod>
+      <crap>2.15</crap>
+      <complexity>2</complexity>
+      <coverage>66.67</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>ConfMgr\Parser</package>
+      <className>ConfMgr\Parser\IniParser</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(string $source)</methodSignature>
+      <fullMethod>__construct(string $source)</fullMethod>
+      <crap>2.06</crap>
+      <complexity>2</complexity>
+      <coverage>75</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>ConfMgr\Parser</package>
+      <className>ConfMgr\Parser\IniParser</className>
+      <methodName>parse</methodName>
+      <methodSignature>parse(): array</methodSignature>
+      <fullMethod>parse(): array</fullMethod>
+      <crap>2.15</crap>
+      <complexity>2</complexity>
+      <coverage>66.67</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+  </methods>
+</crap_result>
