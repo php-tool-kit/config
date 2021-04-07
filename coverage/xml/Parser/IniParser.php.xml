@@ -18,36 +18,42 @@
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="53">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="54">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="58">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="59">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="63">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
     </coverage>

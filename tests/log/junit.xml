@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="4" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.014483">
-    <testsuite name="default" tests="4" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.014483">
-      <testsuite name="PTK\Config\Test\ConfigLoaderTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigLoaderTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.009726">
-        <testcase name="testLoadIniFile" class="PTK\Config\Test\ConfigLoaderTest" classname="PTK.Config.Test.ConfigLoaderTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigLoaderTest.php" line="42" assertions="1" time="0.009726"/>
+  <testsuite name="" tests="7" assertions="8" errors="0" warnings="0" failures="0" skipped="0" time="0.012372">
+    <testsuite name="default" tests="7" assertions="8" errors="0" warnings="0" failures="0" skipped="0" time="0.012372">
+      <testsuite name="PTK\Config\Test\ConfigLoaderTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigLoaderTest.php" tests="3" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.007991">
+        <testcase name="testLoadIniFile" class="PTK\Config\Test\ConfigLoaderTest" classname="PTK.Config.Test.ConfigLoaderTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigLoaderTest.php" line="42" assertions="1" time="0.006031"/>
+        <testcase name="testLoadYamlFileWithYmlExtension" class="PTK\Config\Test\ConfigLoaderTest" classname="PTK.Config.Test.ConfigLoaderTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigLoaderTest.php" line="50" assertions="1" time="0.001128"/>
+        <testcase name="testLoadYamlFileWithYamlExtension" class="PTK\Config\Test\ConfigLoaderTest" classname="PTK.Config.Test.ConfigLoaderTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigLoaderTest.php" line="58" assertions="1" time="0.000832"/>
       </testsuite>
-      <testsuite name="PTK\Config\Test\ConfigRepoTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php" tests="3" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.004756">
-        <testcase name="testGetMethodSuccess" class="PTK\Config\Test\ConfigRepoTest" classname="PTK.Config.Test.ConfigRepoTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php" line="41" assertions="1" time="0.002281"/>
-        <testcase name="testGetMagicMethodSuccess" class="PTK\Config\Test\ConfigRepoTest" classname="PTK.Config.Test.ConfigRepoTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php" line="47" assertions="1" time="0.000874"/>
-        <testcase name="testListMethodSuccess" class="PTK\Config\Test\ConfigRepoTest" classname="PTK.Config.Test.ConfigRepoTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php" line="53" assertions="2" time="0.001601"/>
+      <testsuite name="PTK\Config\Test\ConfigRepoTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php" tests="4" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.004380">
+        <testcase name="testGetMethodSuccess" class="PTK\Config\Test\ConfigRepoTest" classname="PTK.Config.Test.ConfigRepoTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php" line="41" assertions="1" time="0.001006"/>
+        <testcase name="testGetMagicMethodSuccess" class="PTK\Config\Test\ConfigRepoTest" classname="PTK.Config.Test.ConfigRepoTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php" line="47" assertions="1" time="0.000675"/>
+        <testcase name="testUnexpectedKey" class="PTK\Config\Test\ConfigRepoTest" classname="PTK.Config.Test.ConfigRepoTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php" line="53" assertions="1" time="0.001218"/>
+        <testcase name="testListMethodSuccess" class="PTK\Config\Test\ConfigRepoTest" classname="PTK.Config.Test.ConfigRepoTest" file="C:\Users\Everton\Documents\ConfMgr\tests\ConfigRepoTest.php" line="60" assertions="2" time="0.001481"/>
       </testsuite>
     </testsuite>
   </testsuite>

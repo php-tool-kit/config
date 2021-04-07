@@ -1,22 +1,25 @@
 <?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <build time="Wed Apr 7 18:48:49 UTC 2021" phpunit="9.5.0" coverage="9.2.6">
+  <build time="Wed Apr 7 19:00:07 UTC 2021" phpunit="9.5.0" coverage="9.2.6">
     <runtime name="PHP" version="7.4.12" url="https://secure.php.net/"/>
     <driver name="xdebug" version="3.0.3"/>
   </build>
   <project source="C:\Users\Everton\Documents\ConfMgr\src">
     <tests>
       <test name="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile" size="unknown" result="0" status="PASSED"/>
+      <test name="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYmlExtension" size="unknown" result="0" status="PASSED"/>
+      <test name="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYamlExtension" size="unknown" result="0" status="PASSED"/>
       <test name="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess" size="unknown" result="0" status="PASSED"/>
       <test name="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess" size="unknown" result="0" status="PASSED"/>
+      <test name="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey" size="unknown" result="0" status="PASSED"/>
       <test name="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess" size="unknown" result="0" status="PASSED"/>
     </tests>
     <directory name="/">
       <totals>
-        <lines total="587" comments="342" code="245" executable="48" executed="32" percent="66.67"/>
-        <methods count="12" tested="6" percent="50.00"/>
+        <lines total="586" comments="342" code="244" executable="48" executed="43" percent="89.58"/>
+        <methods count="12" tested="7" percent="58.33"/>
         <functions count="0" tested="0" percent="0"/>
-        <classes count="5" tested="1" percent="20.00"/>
+        <classes count="5" tested="2" percent="40.00"/>
         <traits count="0" tested="0" percent="0"/>
       </totals>
       <directory name="Indexer">
@@ -48,7 +51,7 @@
       </directory>
       <directory name="Loader">
         <totals>
-          <lines total="110" comments="51" code="59" executable="15" executed="10" percent="66.67"/>
+          <lines total="111" comments="51" code="60" executable="15" executed="14" percent="93.33"/>
           <methods count="2" tested="1" percent="50.00"/>
           <functions count="0" tested="0" percent="0"/>
           <classes count="1" tested="0" percent="0.00"/>
@@ -56,7 +59,7 @@
         </totals>
         <file name="ConfigLoader.php" href="Loader/ConfigLoader.php.xml">
           <totals>
-            <lines total="110" comments="51" code="59" executable="15" executed="10" percent="66.67"/>
+            <lines total="111" comments="51" code="60" executable="15" executed="14" percent="93.33"/>
             <methods count="2" tested="1" percent="50.00"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="1" tested="0" percent="0.00"/>
@@ -66,7 +69,7 @@
       </directory>
       <directory name="Parser">
         <totals>
-          <lines total="186" comments="104" code="82" executable="16" executed="6" percent="37.50"/>
+          <lines total="186" comments="104" code="82" executable="16" executed="12" percent="75.00"/>
           <methods count="4" tested="0" percent="0.00"/>
           <functions count="0" tested="0" percent="0"/>
           <classes count="2" tested="0" percent="0.00"/>
@@ -92,7 +95,7 @@
         </file>
         <file name="YamlParser.php" href="Parser/YamlParser.php.xml">
           <totals>
-            <lines total="67" comments="33" code="34" executable="8" executed="0" percent="0.00"/>
+            <lines total="67" comments="33" code="34" executable="8" executed="6" percent="75.00"/>
             <methods count="2" tested="0" percent="0.00"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="1" tested="0" percent="0.00"/>
@@ -102,18 +105,18 @@
       </directory>
       <directory name="Repository">
         <totals>
-          <lines total="161" comments="103" code="58" executable="7" executed="6" percent="85.71"/>
-          <methods count="4" tested="3" percent="75.00"/>
+          <lines total="159" comments="103" code="56" executable="7" executed="7" percent="100.00"/>
+          <methods count="4" tested="4" percent="100.00"/>
           <functions count="0" tested="0" percent="0"/>
-          <classes count="1" tested="0" percent="0.00"/>
+          <classes count="1" tested="1" percent="100.00"/>
           <traits count="0" tested="0" percent="0"/>
         </totals>
         <file name="ConfigRepo.php" href="Repository/ConfigRepo.php.xml">
           <totals>
-            <lines total="83" comments="43" code="40" executable="7" executed="6" percent="85.71"/>
-            <methods count="4" tested="3" percent="75.00"/>
+            <lines total="81" comments="43" code="38" executable="7" executed="7" percent="100.00"/>
+            <methods count="4" tested="4" percent="100.00"/>
             <functions count="0" tested="0" percent="0"/>
-            <classes count="1" tested="0" percent="0.00"/>
+            <classes count="1" tested="1" percent="100.00"/>
             <traits count="0" tested="0" percent="0"/>
           </totals>
         </file>

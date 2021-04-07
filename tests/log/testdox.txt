@@ -1,8 +1,11 @@
 Config Loader (PTK\Config\Test\ConfigLoader)
  [x] Load ini file
+ [x] Load yaml file with yml extension
+ [x] Load yaml file with yaml extension
 
 Config Repo (PTK\Config\Test\ConfigRepo)
  [x] Get method success
  [x] Get magic method success
+ [x] Unexpected key
  [x] List method success
 

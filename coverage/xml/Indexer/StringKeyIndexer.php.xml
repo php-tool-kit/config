@@ -16,62 +16,92 @@
     <coverage>
       <line nr="56">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYmlExtension"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYamlExtension"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="58">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYmlExtension"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYamlExtension"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="70">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYmlExtension"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYamlExtension"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="71">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYmlExtension"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYamlExtension"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="72">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYmlExtension"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYamlExtension"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="73">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYmlExtension"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYamlExtension"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="75">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYmlExtension"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYamlExtension"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="76">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYmlExtension"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYamlExtension"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="78">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYmlExtension"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYamlExtension"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="81">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYmlExtension"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYamlExtension"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
     </coverage>

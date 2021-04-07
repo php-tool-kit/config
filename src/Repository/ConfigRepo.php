@@ -32,8 +32,6 @@ declare(strict_types=1);
 
 namespace PTK\Config\Repository;
 
-use PTK\Config\Indexer\IndexerInterface;
-use PTK\Config\Indexer\StringKeyIndexer;
 use UnexpectedValueException;
 
 /**

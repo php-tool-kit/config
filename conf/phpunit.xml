@@ -5,7 +5,7 @@ https://phpunit.readthedocs.io/en/9.5/configuration.html
 
 
 <phpunit
-    bootstrap="../vendor/autoload.php"
+    bootstrap="phpunit-bootstrap.php"
     colors="true"
     testdox="true"
     cacheResult="false"
@@ -31,20 +31,20 @@ https://phpunit.readthedocs.io/en/9.5/configuration.html
             <directory suffix=".php">../src</directory>
         </include>
         <report>
-            <clover outputFile="../coverage/clover.xml"/>
-            <crap4j outputFile="../coverage/crap4j.xml" threshold="50"/>
+<!--            <clover outputFile="../coverage/clover.xml"/>
+            <crap4j outputFile="../coverage/crap4j.xml" threshold="50"/>-->
             <html outputDirectory="../coverage/html/" lowUpperBound="50" highLowerBound="90"/>
-            <php outputFile="../coverage/coverage.php"/>
+<!--            <php outputFile="../coverage/coverage.php"/>
             <text outputFile="../coverage/coverage.txt" showUncoveredFiles="true" showOnlySummary="true"/>
-            <xml outputDirectory="../coverage/xml"/>
+            <xml outputDirectory="../coverage/xml"/>-->
         </report>
     </coverage>
     <logging>
-        <junit outputFile="../tests/log/junit.xml"/>
-        <teamcity outputFile="../tests/log/teamcity.txt"/>
+<!--        <junit outputFile="../tests/log/junit.xml"/>
+        <teamcity outputFile="../tests/log/teamcity.txt"/>-->
         <testdoxHtml outputFile="../tests/log/testdox.html"/>
-        <testdoxText outputFile="../tests/log/testdox.txt"/>
+<!--        <testdoxText outputFile="../tests/log/testdox.txt"/>
         <testdoxXml outputFile="../tests/log/testdox.xml"/>
-        <text outputFile="../tests/log/logfile.txt"/>
+        <text outputFile="../tests/log/logfile.txt"/>-->
     </logging>
 </phpunit>

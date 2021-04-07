@@ -3,6 +3,7 @@
 /**
  * Prooph was here at `%package%` in `%year%`! Please create a .docheader in the project root and run `composer cs-fix`
  */
+
 declare(strict_types=1);
 
 /*
@@ -31,7 +32,6 @@ declare(strict_types=1);
 
 namespace PTK\Config\Loader;
 
-use PTK\Config\Indexer\IndexerInterface;
 use PTK\Config\Indexer\StringKeyIndexer;
 use PTK\Config\Parser\IniParser;
 use PTK\Config\Parser\ParserInterface;
@@ -45,8 +45,8 @@ use UnexpectedValueException;
  *
  * @author Everton
  */
-class ConfigLoader {
-    
+class ConfigLoader
+{
     /**
      * Carrega as configurações.
      *
@@ -60,10 +60,11 @@ class ConfigLoader {
      * @return ConfigRepoInterface Um objeto com as configurações carregadas.
      */
 //    public static function load(string ...$source): ConfigRepoInterface {
-    public static function load(string ...$source): ConfigRepoInterface {
+    public static function load(string ...$source): ConfigRepoInterface
+    {
         //cria o indexer padrão
         $indexer = new StringKeyIndexer();
-        
+
         //armazena os dados recebidos do parser
         $config = [];
 
@@ -76,14 +77,14 @@ class ConfigLoader {
 
             //indexa o resultado
             $data = $indexer->index($data);
-            
+
             //mescla o resultado
             $config = \array_merge($config, $data);
         }//fim loop $sources
         //retorna o armazém de configurações
         return new ConfigRepo($config);
     }
-    
+
     /**
      * Detecta qual parser é o adequado de acordo com o conteúdo de $source.
      *
@@ -91,7 +92,8 @@ class ConfigLoader {
      * @return ParserInterface
      * @throws UnexpectedValueException
      */
-    protected static function dectectParser(string $source): ParserInterface {
+    protected static function dectectParser(string $source): ParserInterface
+    {
         if (\preg_match('/.\.ini$/i', $source) === 1) {
             return new IniParser($source);
         }
@@ -106,5 +108,4 @@ class ConfigLoader {
 
         throw new UnexpectedValueException($source);
     }
-
 }

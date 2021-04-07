@@ -2,44 +2,54 @@
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
   <file name="ConfigRepo.php" path="\Repository">
     <totals>
-      <lines total="83" comments="43" code="40" executable="7" executed="6" percent="85.71"/>
-      <methods count="4" tested="3" percent="75.00"/>
+      <lines total="81" comments="43" code="38" executable="7" executed="7" percent="100.00"/>
+      <methods count="4" tested="4" percent="100.00"/>
       <functions count="0" tested="0" percent="0"/>
-      <classes count="1" tested="0" percent="0.00"/>
+      <classes count="1" tested="1" percent="100.00"/>
       <traits count="0" tested="0" percent="0"/>
     </totals>
-    <class name="PTK\Config\Repository\ConfigRepo" start="45" executable="7" executed="6" crap="5.07">
+    <class name="PTK\Config\Repository\ConfigRepo" start="43" executable="7" executed="7" crap="5">
       <namespace name="PTK\Config\Repository"/>
-      <method name="__construct" signature="__construct(array $data)" start="60" end="63" crap="1" executable="2" executed="2" coverage="100"/>
-      <method name="__get" signature="__get(string $key)" start="65" end="68" crap="1" executable="1" executed="1" coverage="100"/>
-      <method name="get" signature="get(string $key)" start="70" end="77" crap="2.15" executable="3" executed="2" coverage="66.666666666667"/>
-      <method name="list" signature="list(): array" start="79" end="82" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="__construct" signature="__construct(array $data)" start="58" end="61" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="__get" signature="__get(string $key)" start="63" end="66" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="get" signature="get(string $key)" start="68" end="75" crap="2" executable="3" executed="3" coverage="100"/>
+      <method name="list" signature="list(): array" start="77" end="80" crap="1" executable="1" executed="1" coverage="100"/>
     </class>
     <coverage>
-      <line nr="62">
+      <line nr="60">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYmlExtension"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYamlExtension"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
-      <line nr="63">
+      <line nr="61">
         <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYmlExtension"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadYamlFileWithYamlExtension"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
-      <line nr="67">
+      <line nr="65">
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
       </line>
-      <line nr="72">
+      <line nr="70">
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
+      </line>
+      <line nr="71">
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
         <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
       </line>
-      <line nr="73">
-        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+      <line nr="74">
+        <covered by="PTK\Config\Test\ConfigRepoTest::testUnexpectedKey"/>
       </line>
-      <line nr="81">
+      <line nr="79">
         <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
     </coverage>
@@ -152,53 +162,29 @@
       <line no="35">
         <token name="T_USE">use</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_STRING">PTK</token>
-        <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">Config</token>
-        <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">Indexer</token>
-        <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">IndexerInterface</token>
-        <token name="T_SEMICOLON">;</token>
-      </line>
-      <line no="36">
-        <token name="T_USE">use</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_STRING">PTK</token>
-        <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">Config</token>
-        <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">Indexer</token>
-        <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">StringKeyIndexer</token>
-        <token name="T_SEMICOLON">;</token>
-      </line>
-      <line no="37">
-        <token name="T_USE">use</token>
-        <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">UnexpectedValueException</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="38"/>
-      <line no="39">
+      <line no="36"/>
+      <line no="37">
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="40">
+      <line no="38">
         <token name="T_DOC_COMMENT"> * Reposit&#xF3;rio de configura&#xE7;&#xF5;es. Um reposit&#xF3;rio de configura&#xE7;&#xF5;es &#xE9; um objeto que retorna as configura&#xE7;&#xF5;es.</token>
       </line>
-      <line no="41">
+      <line no="39">
         <token name="T_DOC_COMMENT"> *  &#xC9; normalmente criado com \Config\Loader\ConfigLoader</token>
       </line>
-      <line no="42">
+      <line no="40">
         <token name="T_DOC_COMMENT"> *</token>
       </line>
-      <line no="43">
+      <line no="41">
         <token name="T_DOC_COMMENT"> * @author Everton</token>
       </line>
-      <line no="44">
+      <line no="42">
         <token name="T_DOC_COMMENT"> */</token>
       </line>
-      <line no="45">
+      <line no="43">
         <token name="T_CLASS">class</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">ConfigRepo</token>
@@ -207,23 +193,23 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">ConfigRepoInterface</token>
       </line>
-      <line no="46">
+      <line no="44">
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="47">
+      <line no="45">
         <token name="T_WHITESPACE">    </token>
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="48">
+      <line no="46">
         <token name="T_DOC_COMMENT">     *</token>
       </line>
-      <line no="49">
+      <line no="47">
         <token name="T_DOC_COMMENT">     * @var array&lt;mixed&gt; As configura&#xE7;&#xF5;es chave=&gt;valor conforme gerado por \Config\Indexer\IndexerInterface</token>
       </line>
-      <line no="50">
+      <line no="48">
         <token name="T_DOC_COMMENT">     */</token>
       </line>
-      <line no="51">
+      <line no="49">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PROTECTED">protected</token>
         <token name="T_WHITESPACE"> </token>
@@ -237,30 +223,30 @@
         <token name="T_CLOSE_SQUARE">]</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="52"/>
-      <line no="53">
+      <line no="50"/>
+      <line no="51">
         <token name="T_WHITESPACE">    </token>
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="54">
+      <line no="52">
         <token name="T_DOC_COMMENT">     * Construtor. Embora seja p&#xFA;blico, &#xE9; usado por \Config\Loader\ConfigLoader e n&#xE3;o &#xE9; recomendado a</token>
       </line>
-      <line no="55">
+      <line no="53">
         <token name="T_DOC_COMMENT">     *  instancia&#xE7;&#xE3;o direta.</token>
       </line>
-      <line no="56">
+      <line no="54">
         <token name="T_DOC_COMMENT">     *</token>
       </line>
-      <line no="57">
+      <line no="55">
         <token name="T_DOC_COMMENT">     * @param array&lt;mixed&gt; $data As configura&#xE7;&#xF5;es no formato key=&gt;value, onde key &#xE9; gerado por</token>
       </line>
-      <line no="58">
+      <line no="56">
         <token name="T_DOC_COMMENT">     *  \Config\Indexer\IndexerInterface</token>
       </line>
-      <line no="59">
+      <line no="57">
         <token name="T_DOC_COMMENT">     */</token>
       </line>
-      <line no="60">
+      <line no="58">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -273,11 +259,11 @@
         <token name="T_VARIABLE">$data</token>
         <token name="T_CLOSE_BRACKET">)</token>
       </line>
-      <line no="61">
+      <line no="59">
         <token name="T_WHITESPACE">    </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="62">
+      <line no="60">
         <token name="T_WHITESPACE">        </token>
         <token name="T_VARIABLE">$this</token>
         <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -288,12 +274,12 @@
         <token name="T_VARIABLE">$data</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="63">
+      <line no="61">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="64"/>
-      <line no="65">
+      <line no="62"/>
+      <line no="63">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -306,11 +292,11 @@
         <token name="T_VARIABLE">$key</token>
         <token name="T_CLOSE_BRACKET">)</token>
       </line>
-      <line no="66">
+      <line no="64">
         <token name="T_WHITESPACE">    </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="67">
+      <line no="65">
         <token name="T_WHITESPACE">        </token>
         <token name="T_RETURN">return</token>
         <token name="T_WHITESPACE"> </token>
@@ -322,12 +308,12 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="68">
+      <line no="66">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="69"/>
-      <line no="70">
+      <line no="67"/>
+      <line no="68">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -340,11 +326,11 @@
         <token name="T_VARIABLE">$key</token>
         <token name="T_CLOSE_BRACKET">)</token>
       </line>
-      <line no="71">
+      <line no="69">
         <token name="T_WHITESPACE">    </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="72">
+      <line no="70">
         <token name="T_WHITESPACE">        </token>
         <token name="T_IF">if</token>
         <token name="T_WHITESPACE"> </token>
@@ -363,7 +349,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="73">
+      <line no="71">
         <token name="T_WHITESPACE">            </token>
         <token name="T_RETURN">return</token>
         <token name="T_WHITESPACE"> </token>
@@ -375,12 +361,12 @@
         <token name="T_CLOSE_SQUARE">]</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="74">
+      <line no="72">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="75"/>
-      <line no="76">
+      <line no="73"/>
+      <line no="74">
         <token name="T_WHITESPACE">        </token>
         <token name="T_THROW">throw</token>
         <token name="T_WHITESPACE"> </token>
@@ -392,12 +378,12 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="77">
+      <line no="75">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="78"/>
-      <line no="79">
+      <line no="76"/>
+      <line no="77">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -410,11 +396,11 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_ARRAY">array</token>
       </line>
-      <line no="80">
+      <line no="78">
         <token name="T_WHITESPACE">    </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="81">
+      <line no="79">
         <token name="T_WHITESPACE">        </token>
         <token name="T_RETURN">return</token>
         <token name="T_WHITESPACE"> </token>
@@ -423,14 +409,14 @@
         <token name="T_STRING">repo</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="82">
+      <line no="80">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="83">
+      <line no="81">
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="84"/>
+      <line no="82"/>
     </source>
   </file>
 </phpunit>

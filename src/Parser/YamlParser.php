@@ -37,7 +37,7 @@ use UnexpectedValueException;
 
 /**
  * Parser para configurações em arquivos YAML.
- * 
+ *
  * Apenas o primeiro documento YAML do arquivo será utilizado.
  *
  * @author Everton
@@ -59,7 +59,9 @@ class YamlParser implements ParserInterface
     {
         $data = \yaml_parse_file($this->yamlFile);
         if ($data === false) {
+            // @codeCoverageIgnoreStart
             throw new Exception($this->yamlFile);
+            // @codeCoverageIgnoreEnd
         }
 
         return $data;

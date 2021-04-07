@@ -32,7 +32,25 @@ namespace PTK\Config\Test;
  */
 trait TestToolTrait {
     protected string $iniFile = 'tests/assets/example.ini';
+    protected string $failIniFile = 'tests/assets/fail.ini';
+    protected string $ymlFile = 'tests/assets/example.yml';
+    protected string $failYmlFile = 'tests/assets/fail.yml';
+    protected string $yamlFile = 'tests/assets/example.yaml';
     protected array $iniConfig = [
+        'title' => 'Configuração de exemplo',
+        'db.host' => 'localhost',
+        'db.port' => '8000',
+        'user.name' => 'root',
+        'user.pass' => '123456',
+    ];
+    protected array $yamlConfig = [
+        'title' => 'Configuração de exemplo',
+        'db.host' => 'localhost',
+        'db.port' => '8000',
+        'user.name' => 'root',
+        'user.pass' => '123456',
+    ];
+    protected array $mergedConfig = [
         'title' => 'Configuração de exemplo',
         'db.host' => 'localhost',
         'db.port' => '8000',

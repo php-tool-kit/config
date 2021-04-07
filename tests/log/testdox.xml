@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tests>
-  <test className="PTK\Config\Test\ConfigLoaderTest" methodName="testLoadIniFile" prettifiedClassName="Config Loader (PTK\Config\Test\ConfigLoader)" prettifiedMethodName="Load ini file" status="0" time="0.0097262" size="-1" groups="Everton">
+  <test className="PTK\Config\Test\ConfigLoaderTest" methodName="testLoadIniFile" prettifiedClassName="Config Loader (PTK\Config\Test\ConfigLoader)" prettifiedMethodName="Load ini file" status="0" time="0.0060306" size="-1" groups="Everton">
     <group name="Everton"/>
   </test>
-  <test className="PTK\Config\Test\ConfigRepoTest" methodName="testGetMethodSuccess" prettifiedClassName="Config Repo (PTK\Config\Test\ConfigRepo)" prettifiedMethodName="Get method success" status="0" time="0.0022807" size="-1" groups="Everton">
+  <test className="PTK\Config\Test\ConfigLoaderTest" methodName="testLoadYamlFileWithYmlExtension" prettifiedClassName="Config Loader (PTK\Config\Test\ConfigLoader)" prettifiedMethodName="Load yaml file with yml extension" status="0" time="0.0011283" size="-1" groups="Everton">
     <group name="Everton"/>
   </test>
-  <test className="PTK\Config\Test\ConfigRepoTest" methodName="testGetMagicMethodSuccess" prettifiedClassName="Config Repo (PTK\Config\Test\ConfigRepo)" prettifiedMethodName="Get magic method success" status="0" time="0.0008744" size="-1" groups="Everton">
+  <test className="PTK\Config\Test\ConfigLoaderTest" methodName="testLoadYamlFileWithYamlExtension" prettifiedClassName="Config Loader (PTK\Config\Test\ConfigLoader)" prettifiedMethodName="Load yaml file with yaml extension" status="0" time="0.0008322" size="-1" groups="Everton">
     <group name="Everton"/>
   </test>
-  <test className="PTK\Config\Test\ConfigRepoTest" methodName="testListMethodSuccess" prettifiedClassName="Config Repo (PTK\Config\Test\ConfigRepo)" prettifiedMethodName="List method success" status="0" time="0.0016013" size="-1" groups="Everton">
+  <test className="PTK\Config\Test\ConfigRepoTest" methodName="testGetMethodSuccess" prettifiedClassName="Config Repo (PTK\Config\Test\ConfigRepo)" prettifiedMethodName="Get method success" status="0" time="0.0010055" size="-1" groups="Everton">
+    <group name="Everton"/>
+  </test>
+  <test className="PTK\Config\Test\ConfigRepoTest" methodName="testGetMagicMethodSuccess" prettifiedClassName="Config Repo (PTK\Config\Test\ConfigRepo)" prettifiedMethodName="Get magic method success" status="0" time="0.000675" size="-1" groups="Everton">
+    <group name="Everton"/>
+  </test>
+  <test className="PTK\Config\Test\ConfigRepoTest" methodName="testUnexpectedKey" prettifiedClassName="Config Repo (PTK\Config\Test\ConfigRepo)" prettifiedMethodName="Unexpected key" status="0" time="0.0012185" size="-1" groups="Everton">
+    <group name="Everton"/>
+  </test>
+  <test className="PTK\Config\Test\ConfigRepoTest" methodName="testListMethodSuccess" prettifiedClassName="Config Repo (PTK\Config\Test\ConfigRepo)" prettifiedMethodName="List method success" status="0" time="0.0014815" size="-1" groups="Everton">
     <group name="Everton"/>
   </test>
 </tests>

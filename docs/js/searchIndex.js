@@ -1,69 +1,79 @@
 Search.appendIndex(
     [
                 {
-            "fqsen": "\\ConfMgr\\Config\\ConfigRepo",
-            "name": "ConfigRepo",
-            "summary": "Description\u0020of\u0020ConfigData",
-            "url": "classes/ConfMgr-Config-ConfigRepo.html"
-        },                {
-            "fqsen": "\\ConfMgr\\Config\\ConfigRepoInterface",
-            "name": "ConfigRepoInterface",
-            "summary": "",
-            "url": "classes/ConfMgr-Config-ConfigRepoInterface.html"
-        },                {
-            "fqsen": "\\ConfMgr\\Indexer\\IndexerInterface",
+            "fqsen": "\\PTK\\Config\\Indexer\\IndexerInterface",
             "name": "IndexerInterface",
             "summary": "",
-            "url": "classes/ConfMgr-Indexer-IndexerInterface.html"
+            "url": "classes/PTK-Config-Indexer-IndexerInterface.html"
         },                {
-            "fqsen": "\\ConfMgr\\Indexer\\StringKeyIndexer",
+            "fqsen": "\\PTK\\Config\\Indexer\\StringKeyIndexer",
             "name": "StringKeyIndexer",
             "summary": "Description\u0020of\u0020StringKeyIndexer",
-            "url": "classes/ConfMgr-Indexer-StringKeyIndexer.html"
+            "url": "classes/PTK-Config-Indexer-StringKeyIndexer.html"
         },                {
-            "fqsen": "\\ConfMgr\\Loader\\ConfigLoader",
+            "fqsen": "\\PTK\\Config\\Loader\\ConfigLoader",
             "name": "ConfigLoader",
             "summary": "Loader\u0020de\u0020configura\u00E7\u00F5es.",
-            "url": "classes/ConfMgr-Loader-ConfigLoader.html"
+            "url": "classes/PTK-Config-Loader-ConfigLoader.html"
         },                {
-            "fqsen": "\\ConfMgr\\Parser\\IniParser",
+            "fqsen": "\\PTK\\Config\\Parser\\IniParser",
             "name": "IniParser",
-            "summary": "Description\u0020of\u0020IniParser",
-            "url": "classes/ConfMgr-Parser-IniParser.html"
+            "summary": "Parser\u0020para\u0020configura\u00E7\u00F5es\u0020em\u0020arquivos\u0020INI.",
+            "url": "classes/PTK-Config-Parser-IniParser.html"
         },                {
-            "fqsen": "\\ConfMgr\\Parser\\ParserInterface",
+            "fqsen": "\\PTK\\Config\\Parser\\ParserInterface",
             "name": "ParserInterface",
             "summary": "",
-            "url": "classes/ConfMgr-Parser-ParserInterface.html"
+            "url": "classes/PTK-Config-Parser-ParserInterface.html"
+        },                {
+            "fqsen": "\\PTK\\Config\\Parser\\YamlParser",
+            "name": "YamlParser",
+            "summary": "Parser\u0020para\u0020configura\u00E7\u00F5es\u0020em\u0020arquivos\u0020YAML.",
+            "url": "classes/PTK-Config-Parser-YamlParser.html"
+        },                {
+            "fqsen": "\\PTK\\Config\\Repository\\ConfigRepo",
+            "name": "ConfigRepo",
+            "summary": "Reposit\u00F3rio\u0020de\u0020configura\u00E7\u00F5es.\u0020Um\u0020reposit\u00F3rio\u0020de\u0020configura\u00E7\u00F5es\u0020\u00E9\u0020um\u0020objeto\u0020que\u0020retorna\u0020as\u0020configura\u00E7\u00F5es.",
+            "url": "classes/PTK-Config-Repository-ConfigRepo.html"
+        },                {
+            "fqsen": "\\PTK\\Config\\Repository\\ConfigRepoInterface",
+            "name": "ConfigRepoInterface",
+            "summary": "Interface\u0020\u0020para\u0020o\u0020reposit\u00F3rio\u0020de\u0020configura\u00E7\u00F5es.",
+            "url": "classes/PTK-Config-Repository-ConfigRepoInterface.html"
         },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
         },                {
-            "fqsen": "\\ConfMgr\\Config",
-            "name": "Config",
-            "summary": "",
-            "url": "namespaces/confmgr-config.html"
-        },                {
-            "fqsen": "\\ConfMgr",
-            "name": "ConfMgr",
-            "summary": "",
-            "url": "namespaces/confmgr.html"
-        },                {
-            "fqsen": "\\ConfMgr\\Indexer",
+            "fqsen": "\\PTK\\Config\\Indexer",
             "name": "Indexer",
             "summary": "",
-            "url": "namespaces/confmgr-indexer.html"
+            "url": "namespaces/ptk-config-indexer.html"
         },                {
-            "fqsen": "\\ConfMgr\\Loader",
+            "fqsen": "\\PTK\\Config",
+            "name": "Config",
+            "summary": "",
+            "url": "namespaces/ptk-config.html"
+        },                {
+            "fqsen": "\\PTK",
+            "name": "PTK",
+            "summary": "",
+            "url": "namespaces/ptk.html"
+        },                {
+            "fqsen": "\\PTK\\Config\\Loader",
             "name": "Loader",
             "summary": "",
-            "url": "namespaces/confmgr-loader.html"
+            "url": "namespaces/ptk-config-loader.html"
         },                {
-            "fqsen": "\\ConfMgr\\Parser",
+            "fqsen": "\\PTK\\Config\\Parser",
             "name": "Parser",
             "summary": "",
-            "url": "namespaces/confmgr-parser.html"
+            "url": "namespaces/ptk-config-parser.html"
+        },                {
+            "fqsen": "\\PTK\\Config\\Repository",
+            "name": "Repository",
+            "summary": "",
+            "url": "namespaces/ptk-config-repository.html"
         }            ]
 );

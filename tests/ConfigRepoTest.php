@@ -29,6 +29,7 @@ namespace PTK\Config\Test;
 use PTK\Config\Loader\ConfigLoader;
 use PTK\Config\Test\TestToolTrait;
 use PHPUnit\Framework\TestCase;
+use UnexpectedValueException;
 
 /**
  * Description of ConfLoaderTest
@@ -50,10 +51,18 @@ class ConfigRepoTest extends TestCase {
         $this->assertEquals('root', $config->{'user.name'});
     }
     
+    public function testUnexpectedKey(): void
+    {
+        $config = ConfigLoader::load($this->iniFile);
+        $this->expectException(UnexpectedValueException::class);
+        $config->get('unknow.key');
+    }
+    
     public function testListMethodSuccess(): void
     {
         $config = ConfigLoader::load($this->iniFile);
         $this->assertIsArray($config->list());
         $this->assertEquals($this->iniConfig, $config->list());
     }
+    
 }

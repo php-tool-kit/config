@@ -26,10 +26,11 @@
 
 namespace PTK\Config\Test;
 
+use PHPUnit\Framework\TestCase;
 use PTK\Config\Loader\ConfigLoader;
 use PTK\Config\Repository\ConfigRepo;
 use PTK\Config\Test\TestToolTrait;
-use PHPUnit\Framework\TestCase;
+use UnexpectedValueException;
 
 /**
  * Description of ConfLoaderTest
@@ -45,5 +46,27 @@ class ConfigLoaderTest extends TestCase {
                 ConfigRepo::class,
                 ConfigLoader::load($this->iniFile)
         );
+    }
+    
+    public function testLoadYamlFileWithYmlExtension(): void
+    {
+        $this->assertInstanceOf(
+                ConfigRepo::class,
+                ConfigLoader::load($this->ymlFile)
+        );
+    }
+    
+    public function testLoadYamlFileWithYamlExtension(): void
+    {
+        $this->assertInstanceOf(
+                ConfigRepo::class,
+                ConfigLoader::load($this->yamlFile)
+        );
+    }
+    
+    public function testUnexpectedParser(): void
+    {
+        $this->expectException(UnexpectedValueException::class);
+        $config = ConfigLoader::load('unknow.parser');
     }
 }

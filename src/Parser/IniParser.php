@@ -57,7 +57,9 @@ class IniParser implements ParserInterface
     {
         $data = \parse_ini_file($this->iniFile, true, INI_SCANNER_TYPED);
         if ($data === false) {
+            // @codeCoverageIgnoreStart
             throw new Exception($this->iniFile);
+            // @codeCoverageIgnoreEnd
         }
 
         return $data;
