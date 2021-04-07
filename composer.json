@@ -14,8 +14,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/php-tool-kit/ConfMgr/issues",
-        "source": "https://github.com/php-tool-kit/ConfMgr"
+        "issues": "https://github.com/php-tool-kit/config/issues",
+        "source": "https://github.com/php-tool-kit/config"
     },
     "minimum-stability": "dev",
     "require": {
