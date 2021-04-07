@@ -2,65 +2,65 @@
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
   <file name="ConfigLoader.php" path="\Loader">
     <totals>
-      <lines total="79" comments="45" code="34" executable="9" executed="8" percent="88.89"/>
+      <lines total="89" comments="47" code="42" executable="9" executed="8" percent="88.89"/>
       <methods count="2" tested="1" percent="50.00"/>
       <functions count="0" tested="0" percent="0"/>
       <classes count="1" tested="0" percent="0.00"/>
       <traits count="0" tested="0" percent="0"/>
     </totals>
-    <class name="ConfMgr\Loader\ConfigLoader" start="34" executable="9" executed="8" crap="4.02">
-      <namespace name="ConfMgr\Loader"/>
-      <method name="load" signature="load(string $source): ConfMgr\Config\ConfigRepoInterface" start="46" end="62" crap="2" executable="6" executed="6" coverage="100"/>
-      <method name="dectectParser" signature="dectectParser(string $source): ConfMgr\Parser\ParserInterface" start="71" end="78" crap="2.15" executable="3" executed="2" coverage="66.666666666667"/>
+    <class name="PTK\Config\Loader\ConfigLoader" start="40" executable="9" executed="8" crap="4.02">
+      <namespace name="PTK\Config\Loader"/>
+      <method name="load" signature="load(string $source): PTK\Config\Repository\ConfigRepoInterface" start="55" end="72" crap="2" executable="6" executed="6" coverage="100"/>
+      <method name="dectectParser" signature="dectectParser(string $source): PTK\Config\Parser\ParserInterface" start="81" end="88" crap="2.15" executable="3" executed="2" coverage="66.666666666667"/>
     </class>
     <coverage>
-      <line nr="48">
-        <covered by="ConfMgr\Test\ConfigLoaderTest::testLoadIniFile"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testListMethodSuccess"/>
-      </line>
-      <line nr="51">
-        <covered by="ConfMgr\Test\ConfigLoaderTest::testLoadIniFile"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testListMethodSuccess"/>
-      </line>
-      <line nr="53">
-        <covered by="ConfMgr\Test\ConfigLoaderTest::testLoadIniFile"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testListMethodSuccess"/>
-      </line>
-      <line nr="55">
-        <covered by="ConfMgr\Test\ConfigLoaderTest::testLoadIniFile"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testListMethodSuccess"/>
-      </line>
-      <line nr="57">
-        <covered by="ConfMgr\Test\ConfigLoaderTest::testLoadIniFile"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testListMethodSuccess"/>
+      <line nr="58">
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
       <line nr="61">
-        <covered by="ConfMgr\Test\ConfigLoaderTest::testLoadIniFile"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testListMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
-      <line nr="73">
-        <covered by="ConfMgr\Test\ConfigLoaderTest::testLoadIniFile"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testListMethodSuccess"/>
+      <line nr="63">
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
-      <line nr="74">
-        <covered by="ConfMgr\Test\ConfigLoaderTest::testLoadIniFile"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
-        <covered by="ConfMgr\Test\ConfigRepoTest::testListMethodSuccess"/>
+      <line nr="65">
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
+      </line>
+      <line nr="67">
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
+      </line>
+      <line nr="71">
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
+      </line>
+      <line nr="83">
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
+      </line>
+      <line nr="84">
+        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
+        <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
       </line>
     </coverage>
     <source>
@@ -141,67 +141,131 @@
       <line no="27">
         <token name="T_NAMESPACE">namespace</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_STRING">ConfMgr</token>
+        <token name="T_STRING">PTK</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Config</token>
         <token name="T_NS_SEPARATOR">\</token>
         <token name="T_STRING">Loader</token>
         <token name="T_SEMICOLON">;</token>
       </line>
       <line no="28"/>
       <line no="29">
-        <token name="T_DOC_COMMENT">/**</token>
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PTK</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Config</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Parser</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">IniParser</token>
+        <token name="T_SEMICOLON">;</token>
       </line>
       <line no="30">
-        <token name="T_DOC_COMMENT"> * Loader de configura&#xE7;&#xF5;es.</token>
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PTK</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Config</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Parser</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">ParserInterface</token>
+        <token name="T_SEMICOLON">;</token>
       </line>
       <line no="31">
-        <token name="T_DOC_COMMENT"> *</token>
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PTK</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Config</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Repository</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">ConfigRepo</token>
+        <token name="T_SEMICOLON">;</token>
       </line>
       <line no="32">
-        <token name="T_DOC_COMMENT"> * @author Everton</token>
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PTK</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Config</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Repository</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">ConfigRepoInterface</token>
+        <token name="T_SEMICOLON">;</token>
       </line>
       <line no="33">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">UnexpectedValueException</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="34"/>
+      <line no="35">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="36">
+        <token name="T_DOC_COMMENT"> * Loader de configura&#xE7;&#xF5;es.</token>
+      </line>
+      <line no="37">
+        <token name="T_DOC_COMMENT"> *</token>
+      </line>
+      <line no="38">
+        <token name="T_DOC_COMMENT"> * @author Everton</token>
+      </line>
+      <line no="39">
         <token name="T_DOC_COMMENT"> */</token>
       </line>
-      <line no="34">
+      <line no="40">
         <token name="T_CLASS">class</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">ConfigLoader</token>
-        <token name="T_WHITESPACE"> </token>
+      </line>
+      <line no="41">
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="35"/>
-      <line no="36">
+      <line no="42"/>
+      <line no="43">
         <token name="T_WHITESPACE">    </token>
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="37">
+      <line no="44">
         <token name="T_DOC_COMMENT">     * Carrega as configura&#xE7;&#xF5;es.</token>
       </line>
-      <line no="38">
-        <token name="T_DOC_COMMENT">     *</token>
-      </line>
-      <line no="39">
-        <token name="T_DOC_COMMENT">     * Se fornecido mais de um valor para $source, as configura&#xE7;&#xF5;es ser&#xE3;o mescladas observada a ordem em que os arquivos est&#xE3;o nos par&#xE3;metros da fun&#xE7;&#xE3;o.</token>
-      </line>
-      <line no="40">
-        <token name="T_DOC_COMMENT">     *</token>
-      </line>
-      <line no="41">
-        <token name="T_DOC_COMMENT">     * Se houver conflito de configura&#xE7;&#xF5;es, a da ultima $source ser&#xE1; utilizada.</token>
-      </line>
-      <line no="42">
-        <token name="T_DOC_COMMENT">     *</token>
-      </line>
-      <line no="43">
-        <token name="T_DOC_COMMENT">     * @param string $sources Lista de strings com as fontes de configura&#xE7;&#xE3;o. Usualmente caminhos para arquivos suportados ou DSN para conex&#xE3;o a bancos de dados (se suportado).</token>
-      </line>
-      <line no="44">
-        <token name="T_DOC_COMMENT">     * @return \ConfMgr\ConfigData Um objeto com as configura&#xE7;&#xF5;es carregadas.</token>
-      </line>
       <line no="45">
-        <token name="T_DOC_COMMENT">     */</token>
+        <token name="T_DOC_COMMENT">     *</token>
       </line>
       <line no="46">
+        <token name="T_DOC_COMMENT">     * Se fornecido mais de um valor para $source, as configura&#xE7;&#xF5;es ser&#xE3;o mescladas observada a ordem em</token>
+      </line>
+      <line no="47">
+        <token name="T_DOC_COMMENT">     *  que os arquivos est&#xE3;o nos par&#xE3;metros da fun&#xE7;&#xE3;o.</token>
+      </line>
+      <line no="48">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="49">
+        <token name="T_DOC_COMMENT">     * Se houver conflito de configura&#xE7;&#xF5;es, a da ultima $source ser&#xE1; utilizada.</token>
+      </line>
+      <line no="50">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="51">
+        <token name="T_DOC_COMMENT">     * @param string $source Lista de strings com as fontes de configura&#xE7;&#xE3;o. Usualmente caminhos para</token>
+      </line>
+      <line no="52">
+        <token name="T_DOC_COMMENT">     *  arquivos suportados ou DSN para conex&#xE3;o a bancos de dados (se suportado).</token>
+      </line>
+      <line no="53">
+        <token name="T_DOC_COMMENT">     * @return ConfigRepoInterface Um objeto com as configura&#xE7;&#xF5;es carregadas.</token>
+      </line>
+      <line no="54">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="55">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -218,20 +282,17 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_COLON">:</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">ConfMgr</token>
-        <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">Config</token>
-        <token name="T_NS_SEPARATOR">\</token>
         <token name="T_STRING">ConfigRepoInterface</token>
-        <token name="T_WHITESPACE"> </token>
+      </line>
+      <line no="56">
+        <token name="T_WHITESPACE">    </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="47">
+      <line no="57">
         <token name="T_WHITESPACE">        </token>
         <token name="T_COMMENT">//armazena os dados recebidos do parser</token>
       </line>
-      <line no="48">
+      <line no="58">
         <token name="T_WHITESPACE">        </token>
         <token name="T_VARIABLE">$config</token>
         <token name="T_WHITESPACE"> </token>
@@ -241,14 +302,12 @@
         <token name="T_CLOSE_SQUARE">]</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="49">
-        <token name="T_WHITESPACE">        </token>
-      </line>
-      <line no="50">
+      <line no="59"/>
+      <line no="60">
         <token name="T_WHITESPACE">        </token>
         <token name="T_COMMENT">//loop $sources</token>
       </line>
-      <line no="51">
+      <line no="61">
         <token name="T_WHITESPACE">        </token>
         <token name="T_FOREACH">foreach</token>
         <token name="T_WHITESPACE"> </token>
@@ -259,13 +318,14 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_VARIABLE">$source</token>
         <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="52">
+      <line no="62">
         <token name="T_WHITESPACE">            </token>
         <token name="T_COMMENT">//detecta o parser adequado</token>
       </line>
-      <line no="53">
+      <line no="63">
         <token name="T_WHITESPACE">            </token>
         <token name="T_VARIABLE">$parser</token>
         <token name="T_WHITESPACE"> </token>
@@ -279,11 +339,11 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="54">
+      <line no="64">
         <token name="T_WHITESPACE">            </token>
         <token name="T_COMMENT">//interpreta $source</token>
       </line>
-      <line no="55">
+      <line no="65">
         <token name="T_WHITESPACE">            </token>
         <token name="T_VARIABLE">$data</token>
         <token name="T_WHITESPACE"> </token>
@@ -296,11 +356,11 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="56">
+      <line no="66">
         <token name="T_WHITESPACE">            </token>
         <token name="T_COMMENT">//mescla o resultado</token>
       </line>
-      <line no="57">
+      <line no="67">
         <token name="T_WHITESPACE">            </token>
         <token name="T_VARIABLE">$config</token>
         <token name="T_WHITESPACE"> </token>
@@ -315,63 +375,56 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="58">
+      <line no="68">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CLOSE_CURLY">}</token>
         <token name="T_COMMENT">//fim loop $sources</token>
       </line>
-      <line no="59">
-        <token name="T_WHITESPACE">        </token>
-      </line>
-      <line no="60">
+      <line no="69"/>
+      <line no="70">
         <token name="T_WHITESPACE">        </token>
         <token name="T_COMMENT">//retorna o armaz&#xE9;m de configura&#xE7;&#xF5;es</token>
       </line>
-      <line no="61">
+      <line no="71">
         <token name="T_WHITESPACE">        </token>
         <token name="T_RETURN">return</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_NEW">new</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">ConfMgr</token>
-        <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">Config</token>
-        <token name="T_NS_SEPARATOR">\</token>
         <token name="T_STRING">ConfigRepo</token>
         <token name="T_OPEN_BRACKET">(</token>
         <token name="T_VARIABLE">$config</token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="62">
+      <line no="72">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="63"/>
-      <line no="64">
+      <line no="73"/>
+      <line no="74">
         <token name="T_WHITESPACE">    </token>
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="65">
+      <line no="75">
         <token name="T_DOC_COMMENT">     * Detecta qual parser &#xE9; o adequado de acordo com o conte&#xFA;do de $source.</token>
       </line>
-      <line no="66">
-        <token name="T_DOC_COMMENT">     * </token>
+      <line no="76">
+        <token name="T_DOC_COMMENT">     *</token>
       </line>
-      <line no="67">
+      <line no="77">
         <token name="T_DOC_COMMENT">     * @param string $source</token>
       </line>
-      <line no="68">
-        <token name="T_DOC_COMMENT">     * @return \ConfMgr\Parser\ParserInterface</token>
+      <line no="78">
+        <token name="T_DOC_COMMENT">     * @return ParserInterface</token>
       </line>
-      <line no="69">
-        <token name="T_DOC_COMMENT">     * @throws \UnexpectedValueException</token>
+      <line no="79">
+        <token name="T_DOC_COMMENT">     * @throws UnexpectedValueException</token>
       </line>
-      <line no="70">
+      <line no="80">
         <token name="T_DOC_COMMENT">     */</token>
       </line>
-      <line no="71">
+      <line no="81">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PROTECTED">protected</token>
         <token name="T_WHITESPACE"> </token>
@@ -387,20 +440,16 @@
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_COLON">:</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">ConfMgr</token>
-        <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">Parser</token>
-        <token name="T_NS_SEPARATOR">\</token>
         <token name="T_STRING">ParserInterface</token>
       </line>
-      <line no="72">
+      <line no="82">
         <token name="T_WHITESPACE">    </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="73">
+      <line no="83">
         <token name="T_WHITESPACE">        </token>
         <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_BRACKET">(</token>
         <token name="T_STRING">preg_match</token>
         <token name="T_OPEN_BRACKET">(</token>
@@ -414,51 +463,46 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_LNUMBER">1</token>
         <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="74">
+      <line no="84">
         <token name="T_WHITESPACE">            </token>
         <token name="T_RETURN">return</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_NEW">new</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">ConfMgr</token>
-        <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">Parser</token>
-        <token name="T_NS_SEPARATOR">\</token>
         <token name="T_STRING">IniParser</token>
         <token name="T_OPEN_BRACKET">(</token>
         <token name="T_VARIABLE">$source</token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="75">
+      <line no="85">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="76">
-        <token name="T_WHITESPACE">        </token>
-      </line>
-      <line no="77">
+      <line no="86"/>
+      <line no="87">
         <token name="T_WHITESPACE">        </token>
         <token name="T_THROW">throw</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">UnexpectedValueException</token>
         <token name="T_OPEN_BRACKET">(</token>
         <token name="T_VARIABLE">$source</token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="78">
+      <line no="88">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="79">
+      <line no="89">
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="80"/>
+      <line no="90"/>
     </source>
   </file>
 </phpunit>

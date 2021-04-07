@@ -24,7 +24,7 @@
  * THE SOFTWARE.
  */
 
-namespace ConfMgr\Test;
+namespace PTK\Config\Test;
 
 /**
  *

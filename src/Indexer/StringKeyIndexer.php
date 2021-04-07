@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Prooph was here at `%package%` in `%year%`! Please create a .docheader in the project root and run `composer cs-fix`
+ */
+
+declare(strict_types=1);
+
 /*
  * The MIT License
  *
@@ -24,38 +30,53 @@
  * THE SOFTWARE.
  */
 
-namespace ConfMgr\Indexer;
+namespace PTK\Config\Indexer;
 
 /**
  * Description of StringKeyIndexer
  *
  * @author Everton
  */
-class StringKeyIndexer implements IndexerInterface {
-
+class StringKeyIndexer implements IndexerInterface
+{
+    /**
+     *
+     * @var array<mixed> O índice de configurações.
+     */
     protected array $index = [];
 
-    public function __construct() {
-        
-    }
-
-    public function index(array $data): array {
+    /**
+     * Gera o índice de configurações.
+     *
+     * @param array<mixed> $data
+     * @return array<mixed>
+     */
+    public function index(array $data): array
+    {
         $this->recursive($data, '');
 
         return $this->index;
     }
 
-    protected function recursive(array $data, string $parentKey) {
+    /**
+     * Método auxiliar.
+     *
+     * @param array<mixed> $data
+     * @param string $parentKey
+     * @return void
+     */
+    protected function recursive(array $data, string $parentKey): void
+    {
         foreach ($data as $key => $value) {
-            if (is_array($value) && !is_int(array_key_first($value))) {
+            if (\is_array($value) && ! \is_int(\array_key_first($value))) {
                 $this->recursive($value, $key);
-            } else {
-                if(strlen($parentKey) > 0){
-                    $key = $parentKey.".$key";
-                }
-                $this->index[$key] = $value;
+                continue;
+            }/* else {*/
+            if (\strlen($parentKey) > 0) {
+                $key = $parentKey . ".$key";
             }
+            $this->index[$key] = $value;
+//            }
         }
     }
-
 }

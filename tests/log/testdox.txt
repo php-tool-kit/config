@@ -1,7 +1,7 @@
-Config Loader (ConfMgr\Test\ConfigLoader)
+Config Loader (PTK\Config\Test\ConfigLoader)
  [x] Load ini file
 
-Config Repo (ConfMgr\Test\ConfigRepo)
+Config Repo (PTK\Config\Test\ConfigRepo)
  [x] Get method success
  [x] Get magic method success
  [x] List method success

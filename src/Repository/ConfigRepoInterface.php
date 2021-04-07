@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Prooph was here at `%package%` in `%year%`! Please create a .docheader in the project root and run `composer cs-fix`
+ */
+
+declare(strict_types=1);
+
 /*
  * The MIT License
  *
@@ -24,18 +30,49 @@
  * THE SOFTWARE.
  */
 
-namespace ConfMgr\Config;
+namespace PTK\Config\Repository;
 
 /**
+ * Interface  para o repositório de configurações.
  *
+ * Um repositório de configurações é um objeto que retorna as configurações. É normalmente criado com
+ *  \Config\Loader\ConfigLoader
  * @author Everton
  */
-interface ConfigRepoInterface {
+interface ConfigRepoInterface
+{
+    /**
+     * Construtor. Embora seja público, é usado por \Config\Loader\ConfigLoader e não é recomendado a
+     *  instanciação direta.
+     *
+     * @param array<mixed> $data As configurações no formato key=>value, onde key é gerado por
+     *  \Config\Indexer\IndexerInterface
+     */
     public function __construct(array $data);
-    
+
+    /**
+     * Getter de configurações.
+     *
+     * @param string $key A chave da configuração, conforme gerada por Config\Indexer\IndexerInterface
+     * @return mixed Retorna o valor da configuração.
+     */
     public function get(string $key);
-    
+
+    /**
+     * Método mágico para acesso direto da configuração simulando propriedades públicas.
+     *
+     * Por exemplo: ```$config->{"level1.level2.level3"}```
+     *
+     * @param string $key A chave da configuração, conforme gerada por \Config\Indexer\IndexerInterface
+     * @return mixed Retorna o valor da configuração.
+     */
     public function __get(string $key);
-    
+
+    /**
+     * Lista todas as configurações no formato chave=>valor com as chaves geradas conforme
+     *  Config\Indexer\IndexerInterface
+     *
+     * @return array<mixed>
+     */
     public function list(): array;
 }

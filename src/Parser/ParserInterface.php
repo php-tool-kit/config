@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Prooph was here at `%package%` in `%year%`! Please create a .docheader in the project root and run `composer cs-fix`
+ */
+
+declare(strict_types=1);
+
 /*
  * The MIT License
  *
@@ -24,15 +30,25 @@
  * THE SOFTWARE.
  */
 
-namespace ConfMgr\Parser;
+namespace PTK\Config\Parser;
 
 /**
  *
  * @author Everton
  */
-interface ParserInterface {
-    
+interface ParserInterface
+{
+    /**
+     * Construtor.
+     *
+     * @param string $source Uma string para o arquivo, DSN de banco de dados ou outra forma de acesso às configurações.
+     */
     public function __construct(string $source);
-    
+
+    /**
+     * Extrai as configurações.
+     *
+     * @return array<mixed>
+     */
     public function parse(): array;
 }

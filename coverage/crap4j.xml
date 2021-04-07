@@ -1,74 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2021-04-06 20:13:36</timestamp>
+  <timestamp>2021-04-07 17:54:37</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>11</methodCount>
+    <methodCount>10</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>21.51</totalCrap>
+    <totalCrap>20.42</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
     <method>
-      <package>ConfMgr\Config</package>
-      <className>ConfMgr\Config\ConfigRepo</className>
-      <methodName>__construct</methodName>
-      <methodSignature>__construct(array $data, ConfMgr\Indexer\IndexerInterface $indexer)</methodSignature>
-      <fullMethod>__construct(array $data, ConfMgr\Indexer\IndexerInterface $indexer)</fullMethod>
-      <crap>2</crap>
-      <complexity>2</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>ConfMgr\Config</package>
-      <className>ConfMgr\Config\ConfigRepo</className>
-      <methodName>__get</methodName>
-      <methodSignature>__get(string $key)</methodSignature>
-      <fullMethod>__get(string $key)</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>ConfMgr\Config</package>
-      <className>ConfMgr\Config\ConfigRepo</className>
-      <methodName>get</methodName>
-      <methodSignature>get(string $key)</methodSignature>
-      <fullMethod>get(string $key)</fullMethod>
-      <crap>2.15</crap>
-      <complexity>2</complexity>
-      <coverage>66.67</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>ConfMgr\Config</package>
-      <className>ConfMgr\Config\ConfigRepo</className>
-      <methodName>list</methodName>
-      <methodSignature>list(): array</methodSignature>
-      <fullMethod>list(): array</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>ConfMgr\Indexer</package>
-      <className>ConfMgr\Indexer\StringKeyIndexer</className>
-      <methodName>__construct</methodName>
-      <methodSignature>__construct()</methodSignature>
-      <fullMethod>__construct()</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>ConfMgr\Indexer</package>
-      <className>ConfMgr\Indexer\StringKeyIndexer</className>
+      <package>PTK\Config\Indexer</package>
+      <className>PTK\Config\Indexer\StringKeyIndexer</className>
       <methodName>index</methodName>
       <methodSignature>index(array $data): array</methodSignature>
       <fullMethod>index(array $data): array</fullMethod>
@@ -78,41 +23,41 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>ConfMgr\Indexer</package>
-      <className>ConfMgr\Indexer\StringKeyIndexer</className>
+      <package>PTK\Config\Indexer</package>
+      <className>PTK\Config\Indexer\StringKeyIndexer</className>
       <methodName>recursive</methodName>
-      <methodSignature>recursive(array $data, string $parentKey)</methodSignature>
-      <fullMethod>recursive(array $data, string $parentKey)</fullMethod>
+      <methodSignature>recursive(array $data, string $parentKey): void</methodSignature>
+      <fullMethod>recursive(array $data, string $parentKey): void</fullMethod>
       <crap>5</crap>
       <complexity>5</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>ConfMgr\Loader</package>
-      <className>ConfMgr\Loader\ConfigLoader</className>
+      <package>PTK\Config\Loader</package>
+      <className>PTK\Config\Loader\ConfigLoader</className>
       <methodName>load</methodName>
-      <methodSignature>load(string $source): ConfMgr\Config\ConfigRepoInterface</methodSignature>
-      <fullMethod>load(string $source): ConfMgr\Config\ConfigRepoInterface</fullMethod>
+      <methodSignature>load(string $source): PTK\Config\Repository\ConfigRepoInterface</methodSignature>
+      <fullMethod>load(string $source): PTK\Config\Repository\ConfigRepoInterface</fullMethod>
       <crap>2</crap>
       <complexity>2</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>ConfMgr\Loader</package>
-      <className>ConfMgr\Loader\ConfigLoader</className>
+      <package>PTK\Config\Loader</package>
+      <className>PTK\Config\Loader\ConfigLoader</className>
       <methodName>dectectParser</methodName>
-      <methodSignature>dectectParser(string $source): ConfMgr\Parser\ParserInterface</methodSignature>
-      <fullMethod>dectectParser(string $source): ConfMgr\Parser\ParserInterface</fullMethod>
+      <methodSignature>dectectParser(string $source): PTK\Config\Parser\ParserInterface</methodSignature>
+      <fullMethod>dectectParser(string $source): PTK\Config\Parser\ParserInterface</fullMethod>
       <crap>2.15</crap>
       <complexity>2</complexity>
       <coverage>66.67</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>ConfMgr\Parser</package>
-      <className>ConfMgr\Parser\IniParser</className>
+      <package>PTK\Config\Parser</package>
+      <className>PTK\Config\Parser\IniParser</className>
       <methodName>__construct</methodName>
       <methodSignature>__construct(string $source)</methodSignature>
       <fullMethod>__construct(string $source)</fullMethod>
@@ -122,14 +67,58 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>ConfMgr\Parser</package>
-      <className>ConfMgr\Parser\IniParser</className>
+      <package>PTK\Config\Parser</package>
+      <className>PTK\Config\Parser\IniParser</className>
       <methodName>parse</methodName>
       <methodSignature>parse(): array</methodSignature>
       <fullMethod>parse(): array</fullMethod>
+      <crap>2.06</crap>
+      <complexity>2</complexity>
+      <coverage>75</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>PTK\Config\Repository</package>
+      <className>PTK\Config\Repository\ConfigRepo</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(array $data, PTK\Config\Indexer\IndexerInterface $indexer)</methodSignature>
+      <fullMethod>__construct(array $data, PTK\Config\Indexer\IndexerInterface $indexer)</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>PTK\Config\Repository</package>
+      <className>PTK\Config\Repository\ConfigRepo</className>
+      <methodName>__get</methodName>
+      <methodSignature>__get(string $key)</methodSignature>
+      <fullMethod>__get(string $key)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>PTK\Config\Repository</package>
+      <className>PTK\Config\Repository\ConfigRepo</className>
+      <methodName>get</methodName>
+      <methodSignature>get(string $key)</methodSignature>
+      <fullMethod>get(string $key)</fullMethod>
       <crap>2.15</crap>
       <complexity>2</complexity>
       <coverage>66.67</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>PTK\Config\Repository</package>
+      <className>PTK\Config\Repository\ConfigRepo</className>
+      <methodName>list</methodName>
+      <methodSignature>list(): array</methodSignature>
+      <fullMethod>list(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
   </methods>

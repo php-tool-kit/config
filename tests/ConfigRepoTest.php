@@ -24,30 +24,35 @@
  * THE SOFTWARE.
  */
 
-namespace ConfMgr\Test;
+namespace PTK\Config\Test;
+
+use PTK\Config\Loader\ConfigLoader;
+use PTK\Config\Test\TestToolTrait;
+use PHPUnit\Framework\TestCase;
+
 /**
  * Description of ConfLoaderTest
  *
  * @author Everton
  */
-class ConfigRepoTest extends \PHPUnit\Framework\TestCase {
+class ConfigRepoTest extends TestCase {
     use TestToolTrait;
     
     public function testGetMethodSuccess(): void
     {
-        $config = \ConfMgr\Loader\ConfigLoader::load($this->iniFile);
+        $config = ConfigLoader::load($this->iniFile);
         $this->assertEquals('root', $config->get('user.name'));
     }
     
     public function testGetMagicMethodSuccess(): void
     {
-        $config = \ConfMgr\Loader\ConfigLoader::load($this->iniFile);
+        $config = ConfigLoader::load($this->iniFile);
         $this->assertEquals('root', $config->{'user.name'});
     }
     
     public function testListMethodSuccess(): void
     {
-        $config = \ConfMgr\Loader\ConfigLoader::load($this->iniFile);
+        $config = ConfigLoader::load($this->iniFile);
         $this->assertIsArray($config->list());
         $this->assertEquals($this->iniConfig, $config->list());
     }

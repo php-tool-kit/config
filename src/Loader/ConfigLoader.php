@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Prooph was here at `%package%` in `%year%`! Please create a .docheader in the project root and run `composer cs-fix`
+ */
+
+declare(strict_types=1);
+
 /*
  * The MIT License
  *
@@ -24,56 +30,65 @@
  * THE SOFTWARE.
  */
 
-namespace ConfMgr\Loader;
+namespace PTK\Config\Loader;
+
+use PTK\Config\Parser\IniParser;
+use PTK\Config\Parser\ParserInterface;
+use PTK\Config\Repository\ConfigRepo;
+use PTK\Config\Repository\ConfigRepoInterface;
+use UnexpectedValueException;
 
 /**
  * Loader de configurações.
  *
  * @author Everton
  */
-class ConfigLoader {
-
+class ConfigLoader
+{
     /**
      * Carrega as configurações.
      *
-     * Se fornecido mais de um valor para $source, as configurações serão mescladas observada a ordem em que os arquivos estão nos parãmetros da função.
+     * Se fornecido mais de um valor para $source, as configurações serão mescladas observada a ordem em
+     *  que os arquivos estão nos parãmetros da função.
      *
      * Se houver conflito de configurações, a da ultima $source será utilizada.
      *
-     * @param string $sources Lista de strings com as fontes de configuração. Usualmente caminhos para arquivos suportados ou DSN para conexão a bancos de dados (se suportado).
-     * @return \ConfMgr\ConfigData Um objeto com as configurações carregadas.
+     * @param string $source Lista de strings com as fontes de configuração. Usualmente caminhos para
+     *  arquivos suportados ou DSN para conexão a bancos de dados (se suportado).
+     * @return ConfigRepoInterface Um objeto com as configurações carregadas.
      */
-    public static function load(string ...$source): \ConfMgr\Config\ConfigRepoInterface {
+    public static function load(string ...$source): ConfigRepoInterface
+    {
         //armazena os dados recebidos do parser
         $config = [];
-        
+
         //loop $sources
-        foreach ($source as $source){
+        foreach ($source as $source) {
             //detecta o parser adequado
             $parser = self::dectectParser($source);
             //interpreta $source
             $data = $parser->parse();
             //mescla o resultado
-            $config = array_merge($config, $data);
+            $config = \array_merge($config, $data);
         }//fim loop $sources
-        
+
         //retorna o armazém de configurações
-        return new \ConfMgr\Config\ConfigRepo($config);
+        return new ConfigRepo($config);
     }
 
     /**
      * Detecta qual parser é o adequado de acordo com o conteúdo de $source.
-     * 
+     *
      * @param string $source
-     * @return \ConfMgr\Parser\ParserInterface
-     * @throws \UnexpectedValueException
+     * @return ParserInterface
+     * @throws UnexpectedValueException
      */
-    protected static function dectectParser(string $source): \ConfMgr\Parser\ParserInterface
+    protected static function dectectParser(string $source): ParserInterface
     {
-        if(preg_match('/.\.ini$/i', $source) === 1){
-            return new \ConfMgr\Parser\IniParser($source);
+        if (\preg_match('/.\.ini$/i', $source) === 1) {
+            return new IniParser($source);
         }
-        
-        throw \UnexpectedValueException($source);
+
+        throw new UnexpectedValueException($source);
     }
 }

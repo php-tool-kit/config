@@ -2,7 +2,7 @@
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
   <file name="IndexerInterface.php" path="\Indexer">
     <totals>
-      <lines total="37" comments="27" code="10" executable="0" executed="0" percent="0"/>
+      <lines total="43" comments="33" code="10" executable="0" executed="0" percent="0"/>
       <methods count="0" tested="0" percent="0"/>
       <functions count="0" tested="0" percent="0"/>
       <classes count="0" tested="0" percent="0"/>
@@ -86,7 +86,9 @@
       <line no="27">
         <token name="T_NAMESPACE">namespace</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_STRING">ConfMgr</token>
+        <token name="T_STRING">PTK</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Config</token>
         <token name="T_NS_SEPARATOR">\</token>
         <token name="T_STRING">Indexer</token>
         <token name="T_SEMICOLON">;</token>
@@ -108,24 +110,31 @@
         <token name="T_INTERFACE">interface</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">IndexerInterface</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_OPEN_CURLY">{</token>
       </line>
       <line no="34">
-        <token name="T_WHITESPACE">    </token>
-        <token name="T_PUBLIC">public</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_FUNCTION">function</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_STRING">__construct</token>
-        <token name="T_OPEN_BRACKET">(</token>
-        <token name="T_CLOSE_BRACKET">)</token>
-        <token name="T_SEMICOLON">;</token>
+        <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="35">
-        <token name="T_WHITESPACE">    </token>
-      </line>
+      <line no="35"/>
       <line no="36">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="37">
+        <token name="T_DOC_COMMENT">     * Gera o &#xED;ndice de chaves e valores de configura&#xE7;&#xE3;o.</token>
+      </line>
+      <line no="38">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="39">
+        <token name="T_DOC_COMMENT">     * @param array&lt;mixed&gt; $data</token>
+      </line>
+      <line no="40">
+        <token name="T_DOC_COMMENT">     * @return array&lt;mixed&gt;</token>
+      </line>
+      <line no="41">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="42">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -142,10 +151,10 @@
         <token name="T_ARRAY">array</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="37">
+      <line no="43">
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="38"/>
+      <line no="44"/>
     </source>
   </file>
 </phpunit>

@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Prooph was here at `%package%` in `%year%`! Please create a .docheader in the project root and run `composer cs-fix`
+ */
+
+declare(strict_types=1);
+
 /*
  * The MIT License
  *
@@ -24,39 +30,60 @@
  * THE SOFTWARE.
  */
 
-namespace ConfMgr\Config;
+namespace PTK\Config\Repository;
+
+use PTK\Config\Indexer\IndexerInterface;
+use PTK\Config\Indexer\StringKeyIndexer;
+use UnexpectedValueException;
 
 /**
- * Description of ConfigData
+ * Repositório de configurações. Um repositório de configurações é um objeto que retorna as configurações.
+ *  É normalmente criado com \Config\Loader\ConfigLoader
  *
  * @author Everton
  */
-class ConfigRepo implements ConfigRepoInterface {
-    
+class ConfigRepo implements ConfigRepoInterface
+{
+    /**
+     *
+     * @var array<mixed> As configurações chave=>valor conforme gerado por \Config\Indexer\IndexerInterface
+     */
     protected array $repo = [];
-    
-    public function __construct(array $data, \ConfMgr\Indexer\IndexerInterface $indexer = null) {
-        if(is_null($indexer)){
-            $indexer = new \ConfMgr\Indexer\StringKeyIndexer();
+
+    /**
+     * Construtor. Embora seja público, é usado por \Config\Loader\ConfigLoader e não é recomendado a
+     *  instanciação direta.
+     *
+     * @param array<mixed> $data As configurações no formato key=>value, onde key é gerado por
+     *  \Config\Indexer\IndexerInterface
+     * @param IndexerInterface $indexer Um indexador. O padrão é \Config\Indexer\StringKeyIndexer que forma
+     *  uma chave do tipo level1.level2.level3.levelN
+     */
+    public function __construct(array $data, IndexerInterface $indexer = null)
+    {
+        if (\is_null($indexer)) {
+            $indexer = new StringKeyIndexer();
         }
-        
+
         $this->repo = $indexer->index($data);
     }
 
-    public function __get(string $key) {
+    public function __get(string $key)
+    {
         return $this->get($key);
     }
 
-    public function get(string $key) {
-        if(key_exists($key, $this->repo)){
+    public function get(string $key)
+    {
+        if (\array_key_exists($key, $this->repo)) {
             return $this->repo[$key];
         }
-        
-        throw new \UnexpectedValueException($key);
-    }
-    
-    public function list(): array {
-        return $this->repo;
+
+        throw new UnexpectedValueException($key);
     }
 
+    public function list(): array
+    {
+        return $this->repo;
+    }
 }

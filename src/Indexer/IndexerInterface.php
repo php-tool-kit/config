@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Prooph was here at `%package%` in `%year%`! Please create a .docheader in the project root and run `composer cs-fix`
+ */
+
+declare(strict_types=1);
+
 /*
  * The MIT License
  *
@@ -24,14 +30,19 @@
  * THE SOFTWARE.
  */
 
-namespace ConfMgr\Indexer;
+namespace PTK\Config\Indexer;
 
 /**
  *
  * @author Everton
  */
-interface IndexerInterface {
-    public function __construct();
-    
+interface IndexerInterface
+{
+    /**
+     * Gera o índice de chaves e valores de configuração.
+     *
+     * @param array<mixed> $data
+     * @return array<mixed>
+     */
     public function index(array $data): array;
 }

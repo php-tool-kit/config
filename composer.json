@@ -26,8 +26,8 @@
     },
     "autoload": {
         "psr-4": {
-            "ConfMgr\\": "src/",
-            "ConfMgr\\Test\\": "tests"
+            "PTK\\Config\\": "src",
+            "PTK\\Config\\Test\\": "tests"
         }
     },
     "require-dev": {
@@ -35,7 +35,23 @@
         "phpmd/phpmd": "9999999-dev",
         "friendsofphp/php-cs-fixer": "9999999-dev",
         "squizlabs/php_codesniffer": "*",
-        "phing/phing": "2.*",
-        "ext-fileinfo": "*"
+        "ext-fileinfo": "*",
+        "phpstan/phpstan": "0.12.x-dev",
+        "vimeo/psalm": "4.x-dev"
+    },
+    "scripts": {
+        "dist": [
+            "git add .",
+            "git commit",
+            "git push"
+        ],
+        "phpdoc": "php ./tools/phpDocumentor.phar --config conf/phpdocumentor.xml",
+        "phpunit": "phpunit.bat --configuration conf/phpunit.xml",
+        "psalm": "psalm -c ./conf/psalm.xml",
+        "phpstan": "phpstan analyse -c conf/phpstan.neon",
+        "phpmd": "phpmd src ansi cleancode,codesize,controversial,design,naming,unusedcode",
+        "phpcs": "phpcs -p --standard=PSR12 src",
+        "phpcbf": "phpcbf -p --standard=PSR12 src",
+        "php-cs-fixer": "php-cs-fixer fix --config=conf/php-cs-fixer.php"
     }
 }

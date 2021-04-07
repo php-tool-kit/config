@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <file name="ParserInterface.php" path="\Parser">
+  <file name="ConfigRepoInterface.php" path="\Repository">
     <totals>
-      <lines total="49" comments="37" code="12" executable="0" executed="0" percent="0"/>
+      <lines total="73" comments="57" code="16" executable="0" executed="0" percent="0"/>
       <methods count="0" tested="0" percent="0"/>
       <functions count="0" tested="0" percent="0"/>
       <classes count="0" tested="0" percent="0"/>
@@ -90,7 +90,7 @@
         <token name="T_NS_SEPARATOR">\</token>
         <token name="T_STRING">Config</token>
         <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">Parser</token>
+        <token name="T_STRING">Repository</token>
         <token name="T_SEMICOLON">;</token>
       </line>
       <line no="28"/>
@@ -98,40 +98,55 @@
         <token name="T_DOC_COMMENT">/**</token>
       </line>
       <line no="30">
-        <token name="T_DOC_COMMENT"> *</token>
+        <token name="T_DOC_COMMENT"> * Interface  para o reposit&#xF3;rio de configura&#xE7;&#xF5;es.</token>
       </line>
       <line no="31">
-        <token name="T_DOC_COMMENT"> * @author Everton</token>
+        <token name="T_DOC_COMMENT"> *</token>
       </line>
       <line no="32">
-        <token name="T_DOC_COMMENT"> */</token>
+        <token name="T_DOC_COMMENT"> * Um reposit&#xF3;rio de configura&#xE7;&#xF5;es &#xE9; um objeto que retorna as configura&#xE7;&#xF5;es. &#xC9; normalmente criado com</token>
       </line>
       <line no="33">
-        <token name="T_INTERFACE">interface</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_STRING">ParserInterface</token>
+        <token name="T_DOC_COMMENT"> *  \Config\Loader\ConfigLoader</token>
       </line>
       <line no="34">
+        <token name="T_DOC_COMMENT"> * @author Everton</token>
+      </line>
+      <line no="35">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="36">
+        <token name="T_INTERFACE">interface</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">ConfigRepoInterface</token>
+      </line>
+      <line no="37">
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="35"/>
-      <line no="36">
+      <line no="38"/>
+      <line no="39">
         <token name="T_WHITESPACE">    </token>
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="37">
-        <token name="T_DOC_COMMENT">     * Construtor.</token>
-      </line>
-      <line no="38">
-        <token name="T_DOC_COMMENT">     *</token>
-      </line>
-      <line no="39">
-        <token name="T_DOC_COMMENT">     * @param string $source Uma string para o arquivo, DSN de banco de dados ou outra forma de acesso &#xE0;s configura&#xE7;&#xF5;es.</token>
-      </line>
       <line no="40">
-        <token name="T_DOC_COMMENT">     */</token>
+        <token name="T_DOC_COMMENT">     * Construtor. Embora seja p&#xFA;blico, &#xE9; usado por \Config\Loader\ConfigLoader e n&#xE3;o &#xE9; recomendado a</token>
       </line>
       <line no="41">
+        <token name="T_DOC_COMMENT">     *  instancia&#xE7;&#xE3;o direta.</token>
+      </line>
+      <line no="42">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="43">
+        <token name="T_DOC_COMMENT">     * @param array&lt;mixed&gt; $data As configura&#xE7;&#xF5;es no formato key=&gt;value, onde key &#xE9; gerado por</token>
+      </line>
+      <line no="44">
+        <token name="T_DOC_COMMENT">     *  \Config\Indexer\IndexerInterface</token>
+      </line>
+      <line no="45">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="46">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -139,36 +154,113 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">__construct</token>
         <token name="T_OPEN_BRACKET">(</token>
-        <token name="T_STRING">string</token>
+        <token name="T_ARRAY">array</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_VARIABLE">$source</token>
+        <token name="T_VARIABLE">$data</token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="42"/>
-      <line no="43">
+      <line no="47"/>
+      <line no="48">
         <token name="T_WHITESPACE">    </token>
         <token name="T_DOC_COMMENT">/**</token>
       </line>
-      <line no="44">
-        <token name="T_DOC_COMMENT">     * Extrai as configura&#xE7;&#xF5;es.</token>
+      <line no="49">
+        <token name="T_DOC_COMMENT">     * Getter de configura&#xE7;&#xF5;es.</token>
       </line>
-      <line no="45">
+      <line no="50">
         <token name="T_DOC_COMMENT">     *</token>
       </line>
-      <line no="46">
-        <token name="T_DOC_COMMENT">     * @return array&lt;mixed&gt;</token>
+      <line no="51">
+        <token name="T_DOC_COMMENT">     * @param string $key A chave da configura&#xE7;&#xE3;o, conforme gerada por Config\Indexer\IndexerInterface</token>
       </line>
-      <line no="47">
+      <line no="52">
+        <token name="T_DOC_COMMENT">     * @return mixed Retorna o valor da configura&#xE7;&#xE3;o.</token>
+      </line>
+      <line no="53">
         <token name="T_DOC_COMMENT">     */</token>
       </line>
-      <line no="48">
+      <line no="54">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_FUNCTION">function</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_STRING">parse</token>
+        <token name="T_STRING">get</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$key</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="55"/>
+      <line no="56">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="57">
+        <token name="T_DOC_COMMENT">     * M&#xE9;todo m&#xE1;gico para acesso direto da configura&#xE7;&#xE3;o simulando propriedades p&#xFA;blicas.</token>
+      </line>
+      <line no="58">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="59">
+        <token name="T_DOC_COMMENT">     * Por exemplo: ```$config-&gt;{"level1.level2.level3"}```</token>
+      </line>
+      <line no="60">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="61">
+        <token name="T_DOC_COMMENT">     * @param string $key A chave da configura&#xE7;&#xE3;o, conforme gerada por \Config\Indexer\IndexerInterface</token>
+      </line>
+      <line no="62">
+        <token name="T_DOC_COMMENT">     * @return mixed Retorna o valor da configura&#xE7;&#xE3;o.</token>
+      </line>
+      <line no="63">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="64">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">__get</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$key</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="65"/>
+      <line no="66">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="67">
+        <token name="T_DOC_COMMENT">     * Lista todas as configura&#xE7;&#xF5;es no formato chave=&gt;valor com as chaves geradas conforme</token>
+      </line>
+      <line no="68">
+        <token name="T_DOC_COMMENT">     *  Config\Indexer\IndexerInterface</token>
+      </line>
+      <line no="69">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="70">
+        <token name="T_DOC_COMMENT">     * @return array&lt;mixed&gt;</token>
+      </line>
+      <line no="71">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="72">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LIST">list</token>
         <token name="T_OPEN_BRACKET">(</token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_COLON">:</token>
@@ -176,10 +268,10 @@
         <token name="T_ARRAY">array</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="49">
+      <line no="73">
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="50"/>
+      <line no="74"/>
     </source>
   </file>
 </phpunit>

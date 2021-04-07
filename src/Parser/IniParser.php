@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Prooph was here at `%package%` in `%year%`! Please create a .docheader in the project root and run `composer cs-fix`
+ */
+
+declare(strict_types=1);
+
 /*
  * The MIT License
  *
@@ -24,31 +30,36 @@
  * THE SOFTWARE.
  */
 
-namespace ConfMgr\Parser;
+namespace PTK\Config\Parser;
+
+use Exception;
+use UnexpectedValueException;
 
 /**
- * Description of IniParser
+ * Parser para configurações em arquivos INI.
  *
  * @author Everton
  */
-class IniParser implements ParserInterface {
-    
-    protected string $ini_file = '';
+class IniParser implements ParserInterface
+{
+    protected string $iniFile = '';
 
-    public function __construct(string $source) {
-        if(!file_exists($source)){
-            throw \UnexpectedValueException($source);
+    public function __construct(string $source)
+    {
+        if (! \file_exists($source)) {
+            throw new UnexpectedValueException($this->iniFile);
         }
-        
-        $this->ini_file = $source;
+
+        $this->iniFile = $source;
     }
 
-    public function parse(): array {
-        if(($data = parse_ini_file($this->ini_file, true, INI_SCANNER_TYPED)) === false){
-            throw new \Exception($source);
+    public function parse(): array
+    {
+        $data = \parse_ini_file($this->iniFile, true, INI_SCANNER_TYPED);
+        if ($data === false) {
+            throw new Exception($this->iniFile);
         }
-        
+
         return $data;
     }
-
 }

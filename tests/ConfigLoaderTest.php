@@ -24,20 +24,26 @@
  * THE SOFTWARE.
  */
 
-namespace ConfMgr\Test;
+namespace PTK\Config\Test;
+
+use PTK\Config\Loader\ConfigLoader;
+use PTK\Config\Repository\ConfigRepo;
+use PTK\Config\Test\TestToolTrait;
+use PHPUnit\Framework\TestCase;
+
 /**
  * Description of ConfLoaderTest
  *
  * @author Everton
  */
-class ConfigLoaderTest extends \PHPUnit\Framework\TestCase {
+class ConfigLoaderTest extends TestCase {
     use TestToolTrait;
     
     public function testLoadIniFile(): void
     {
         $this->assertInstanceOf(
-                \ConfMgr\Config\ConfigRepo::class,
-                \ConfMgr\Loader\ConfigLoader::load($this->iniFile)
+                ConfigRepo::class,
+                ConfigLoader::load($this->iniFile)
         );
     }
 }
