@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <build time="Wed Apr 7 17:54:38 UTC 2021" phpunit="9.5.0" coverage="9.2.6">
+  <build time="Wed Apr 7 18:48:49 UTC 2021" phpunit="9.5.0" coverage="9.2.6">
     <runtime name="PHP" version="7.4.12" url="https://secure.php.net/"/>
     <driver name="xdebug" version="3.0.3"/>
   </build>
@@ -13,15 +13,15 @@
     </tests>
     <directory name="/">
       <totals>
-        <lines total="476" comments="289" code="187" executable="36" executed="32" percent="88.89"/>
-        <methods count="10" tested="6" percent="60.00"/>
+        <lines total="587" comments="342" code="245" executable="48" executed="32" percent="66.67"/>
+        <methods count="12" tested="6" percent="50.00"/>
         <functions count="0" tested="0" percent="0"/>
-        <classes count="4" tested="1" percent="25.00"/>
+        <classes count="5" tested="1" percent="20.00"/>
         <traits count="0" tested="0" percent="0"/>
       </totals>
       <directory name="Indexer">
         <totals>
-          <lines total="121" comments="78" code="43" executable="10" executed="10" percent="100.00"/>
+          <lines total="130" comments="84" code="46" executable="10" executed="10" percent="100.00"/>
           <methods count="2" tested="2" percent="100.00"/>
           <functions count="0" tested="0" percent="0"/>
           <classes count="1" tested="1" percent="100.00"/>
@@ -29,7 +29,7 @@
         </totals>
         <file name="IndexerInterface.php" href="Indexer/IndexerInterface.php.xml">
           <totals>
-            <lines total="43" comments="33" code="10" executable="0" executed="0" percent="0"/>
+            <lines total="48" comments="36" code="12" executable="0" executed="0" percent="0"/>
             <methods count="0" tested="0" percent="0"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="0" tested="0" percent="0"/>
@@ -38,7 +38,7 @@
         </file>
         <file name="StringKeyIndexer.php" href="Indexer/StringKeyIndexer.php.xml">
           <totals>
-            <lines total="78" comments="45" code="33" executable="10" executed="10" percent="100.00"/>
+            <lines total="82" comments="48" code="34" executable="10" executed="10" percent="100.00"/>
             <methods count="2" tested="2" percent="100.00"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="1" tested="1" percent="100.00"/>
@@ -48,7 +48,7 @@
       </directory>
       <directory name="Loader">
         <totals>
-          <lines total="89" comments="47" code="42" executable="9" executed="8" percent="88.89"/>
+          <lines total="110" comments="51" code="59" executable="15" executed="10" percent="66.67"/>
           <methods count="2" tested="1" percent="50.00"/>
           <functions count="0" tested="0" percent="0"/>
           <classes count="1" tested="0" percent="0.00"/>
@@ -56,7 +56,7 @@
         </totals>
         <file name="ConfigLoader.php" href="Loader/ConfigLoader.php.xml">
           <totals>
-            <lines total="89" comments="47" code="42" executable="9" executed="8" percent="88.89"/>
+            <lines total="110" comments="51" code="59" executable="15" executed="10" percent="66.67"/>
             <methods count="2" tested="1" percent="50.00"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="1" tested="0" percent="0.00"/>
@@ -66,15 +66,15 @@
       </directory>
       <directory name="Parser">
         <totals>
-          <lines total="109" comments="65" code="44" executable="8" executed="6" percent="75.00"/>
-          <methods count="2" tested="0" percent="0.00"/>
+          <lines total="186" comments="104" code="82" executable="16" executed="6" percent="37.50"/>
+          <methods count="4" tested="0" percent="0.00"/>
           <functions count="0" tested="0" percent="0"/>
-          <classes count="1" tested="0" percent="0.00"/>
+          <classes count="2" tested="0" percent="0.00"/>
           <traits count="0" tested="0" percent="0"/>
         </totals>
         <file name="IniParser.php" href="Parser/IniParser.php.xml">
           <totals>
-            <lines total="60" comments="28" code="32" executable="8" executed="6" percent="75.00"/>
+            <lines total="65" comments="31" code="34" executable="8" executed="6" percent="75.00"/>
             <methods count="2" tested="0" percent="0.00"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="1" tested="0" percent="0.00"/>
@@ -83,17 +83,26 @@
         </file>
         <file name="ParserInterface.php" href="Parser/ParserInterface.php.xml">
           <totals>
-            <lines total="49" comments="37" code="12" executable="0" executed="0" percent="0"/>
+            <lines total="54" comments="40" code="14" executable="0" executed="0" percent="0"/>
             <methods count="0" tested="0" percent="0"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="0" tested="0" percent="0"/>
             <traits count="0" tested="0" percent="0"/>
           </totals>
         </file>
+        <file name="YamlParser.php" href="Parser/YamlParser.php.xml">
+          <totals>
+            <lines total="67" comments="33" code="34" executable="8" executed="0" percent="0.00"/>
+            <methods count="2" tested="0" percent="0.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
       </directory>
       <directory name="Repository">
         <totals>
-          <lines total="157" comments="99" code="58" executable="9" executed="8" percent="88.89"/>
+          <lines total="161" comments="103" code="58" executable="7" executed="6" percent="85.71"/>
           <methods count="4" tested="3" percent="75.00"/>
           <functions count="0" tested="0" percent="0"/>
           <classes count="1" tested="0" percent="0.00"/>
@@ -101,7 +110,7 @@
         </totals>
         <file name="ConfigRepo.php" href="Repository/ConfigRepo.php.xml">
           <totals>
-            <lines total="84" comments="42" code="42" executable="9" executed="8" percent="88.89"/>
+            <lines total="83" comments="43" code="40" executable="7" executed="6" percent="85.71"/>
             <methods count="4" tested="3" percent="75.00"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="1" tested="0" percent="0.00"/>
@@ -110,7 +119,7 @@
         </file>
         <file name="ConfigRepoInterface.php" href="Repository/ConfigRepoInterface.php.xml">
           <totals>
-            <lines total="73" comments="57" code="16" executable="0" executed="0" percent="0"/>
+            <lines total="78" comments="60" code="18" executable="0" executed="0" percent="0"/>
             <methods count="0" tested="0" percent="0"/>
             <functions count="0" tested="0" percent="0"/>
             <classes count="0" tested="0" percent="0"/>

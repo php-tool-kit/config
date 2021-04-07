@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2021-04-07 17:54:37</timestamp>
+  <timestamp>2021-04-07 18:48:48</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>10</methodCount>
+    <methodCount>12</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>20.42</totalCrap>
+    <totalCrap>39.1</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
@@ -50,9 +50,9 @@
       <methodName>dectectParser</methodName>
       <methodSignature>dectectParser(string $source): PTK\Config\Parser\ParserInterface</methodSignature>
       <fullMethod>dectectParser(string $source): PTK\Config\Parser\ParserInterface</fullMethod>
-      <crap>2.15</crap>
-      <complexity>2</complexity>
-      <coverage>66.67</coverage>
+      <crap>9.83</crap>
+      <complexity>4</complexity>
+      <coverage>28.57</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -78,13 +78,35 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
+      <package>PTK\Config\Parser</package>
+      <className>PTK\Config\Parser\YamlParser</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(string $source)</methodSignature>
+      <fullMethod>__construct(string $source)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>PTK\Config\Parser</package>
+      <className>PTK\Config\Parser\YamlParser</className>
+      <methodName>parse</methodName>
+      <methodSignature>parse(): array</methodSignature>
+      <fullMethod>parse(): array</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
       <package>PTK\Config\Repository</package>
       <className>PTK\Config\Repository\ConfigRepo</className>
       <methodName>__construct</methodName>
-      <methodSignature>__construct(array $data, PTK\Config\Indexer\IndexerInterface $indexer)</methodSignature>
-      <fullMethod>__construct(array $data, PTK\Config\Indexer\IndexerInterface $indexer)</fullMethod>
-      <crap>2</crap>
-      <complexity>2</complexity>
+      <methodSignature>__construct(array $data)</methodSignature>
+      <fullMethod>__construct(array $data)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>

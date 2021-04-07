@@ -30,54 +30,38 @@ declare(strict_types=1);
  * THE SOFTWARE.
  */
 
-namespace PTK\Config\Repository;
+namespace PTK\Config\Parser;
 
-use PTK\Config\Indexer\IndexerInterface;
-use PTK\Config\Indexer\StringKeyIndexer;
+use Exception;
 use UnexpectedValueException;
 
 /**
- * Repositório de configurações. Um repositório de configurações é um objeto que retorna as configurações.
- *  É normalmente criado com \Config\Loader\ConfigLoader
+ * Parser para configurações em arquivos YAML.
+ * 
+ * Apenas o primeiro documento YAML do arquivo será utilizado.
  *
  * @author Everton
  */
-class ConfigRepo implements ConfigRepoInterface
+class YamlParser implements ParserInterface
 {
-    /**
-     *
-     * @var array<mixed> As configurações chave=>valor conforme gerado por \Config\Indexer\IndexerInterface
-     */
-    protected array $repo = [];
+    protected string $yamlFile = '';
 
-    /**
-     * Construtor. Embora seja público, é usado por \Config\Loader\ConfigLoader e não é recomendado a
-     *  instanciação direta.
-     *
-     * @param array<mixed> $data As configurações no formato key=>value, onde key é gerado por
-     *  \Config\Indexer\IndexerInterface
-     */
-    public function __construct(array $data)
+    public function __construct(string $source)
     {
-        $this->repo = $data;
-    }
-
-    public function __get(string $key)
-    {
-        return $this->get($key);
-    }
-
-    public function get(string $key)
-    {
-        if (\array_key_exists($key, $this->repo)) {
-            return $this->repo[$key];
+        if (! \file_exists($source)) {
+            throw new UnexpectedValueException($this->yamlFile);
         }
 
-        throw new UnexpectedValueException($key);
+        $this->yamlFile = $source;
     }
 
-    public function list(): array
+    public function parse(): array
     {
-        return $this->repo;
+        $data = \yaml_parse_file($this->yamlFile);
+        if ($data === false) {
+            throw new Exception($this->yamlFile);
+        }
+
+        return $data;
     }
 }

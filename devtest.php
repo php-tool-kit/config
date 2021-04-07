@@ -29,7 +29,10 @@ require_once 'vendor/autoload.php';
 //$indexer = new \ConfMgr\Indexer\StringKeyIndexer();
 //print_r($indexer->index(parse_ini_file('tests/assets/example.ini', true, INI_SCANNER_TYPED)));
 
-$config = ConfMgr\Loader\ConfigLoader::load('tests/assets/example.ini');
+$config = PTK\Config\Loader\ConfigLoader::load(
+        'tests/assets/example.ini',
+        'tests/assets/example.yml'
+);
 print_r($config->list());
 //echo $config->get('user.name'), PHP_EOL;
 //echo $config->{'user.name'}, PHP_EOL;

@@ -1,56 +1,18 @@
 <?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <file name="IniParser.php" path="\Parser">
+  <file name="YamlParser.php" path="\Parser">
     <totals>
-      <lines total="65" comments="31" code="34" executable="8" executed="6" percent="75.00"/>
+      <lines total="67" comments="33" code="34" executable="8" executed="0" percent="0.00"/>
       <methods count="2" tested="0" percent="0.00"/>
       <functions count="0" tested="0" percent="0"/>
       <classes count="1" tested="0" percent="0.00"/>
       <traits count="0" tested="0" percent="0"/>
     </totals>
-    <class name="PTK\Config\Parser\IniParser" start="43" executable="8" executed="6" crap="4.25">
+    <class name="PTK\Config\Parser\YamlParser" start="45" executable="8" executed="0" crap="20">
       <namespace name="PTK\Config\Parser"/>
-      <method name="__construct" signature="__construct(string $source)" start="47" end="54" crap="2.06" executable="4" executed="3" coverage="75"/>
-      <method name="parse" signature="parse(): array" start="56" end="64" crap="2.06" executable="4" executed="3" coverage="75"/>
+      <method name="__construct" signature="__construct(string $source)" start="49" end="56" crap="6" executable="4" executed="0" coverage="0"/>
+      <method name="parse" signature="parse(): array" start="58" end="66" crap="6" executable="4" executed="0" coverage="0"/>
     </class>
-    <coverage>
-      <line nr="49">
-        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
-      </line>
-      <line nr="53">
-        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
-      </line>
-      <line nr="54">
-        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
-      </line>
-      <line nr="58">
-        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
-      </line>
-      <line nr="59">
-        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
-      </line>
-      <line nr="63">
-        <covered by="PTK\Config\Test\ConfigLoaderTest::testLoadIniFile"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMethodSuccess"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testGetMagicMethodSuccess"/>
-        <covered by="PTK\Config\Test\ConfigRepoTest::testListMethodSuccess"/>
-      </line>
-    </coverage>
     <source>
       <line no="1">
         <token name="T_OPEN_TAG">&lt;?php</token>
@@ -174,44 +136,50 @@
         <token name="T_DOC_COMMENT">/**</token>
       </line>
       <line no="39">
-        <token name="T_DOC_COMMENT"> * Parser para configura&#xE7;&#xF5;es em arquivos INI.</token>
+        <token name="T_DOC_COMMENT"> * Parser para configura&#xE7;&#xF5;es em arquivos YAML.</token>
       </line>
       <line no="40">
-        <token name="T_DOC_COMMENT"> *</token>
+        <token name="T_DOC_COMMENT"> * </token>
       </line>
       <line no="41">
-        <token name="T_DOC_COMMENT"> * @author Everton</token>
+        <token name="T_DOC_COMMENT"> * Apenas o primeiro documento YAML do arquivo ser&#xE1; utilizado.</token>
       </line>
       <line no="42">
-        <token name="T_DOC_COMMENT"> */</token>
+        <token name="T_DOC_COMMENT"> *</token>
       </line>
       <line no="43">
+        <token name="T_DOC_COMMENT"> * @author Everton</token>
+      </line>
+      <line no="44">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="45">
         <token name="T_CLASS">class</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_STRING">IniParser</token>
+        <token name="T_STRING">YamlParser</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_IMPLEMENTS">implements</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">ParserInterface</token>
       </line>
-      <line no="44">
+      <line no="46">
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="45">
+      <line no="47">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PROTECTED">protected</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_STRING">string</token>
         <token name="T_WHITESPACE"> </token>
-        <token name="T_VARIABLE">$iniFile</token>
+        <token name="T_VARIABLE">$yamlFile</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_EQUAL">=</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="46"/>
-      <line no="47">
+      <line no="48"/>
+      <line no="49">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -224,11 +192,11 @@
         <token name="T_VARIABLE">$source</token>
         <token name="T_CLOSE_BRACKET">)</token>
       </line>
-      <line no="48">
+      <line no="50">
         <token name="T_WHITESPACE">    </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="49">
+      <line no="51">
         <token name="T_WHITESPACE">        </token>
         <token name="T_IF">if</token>
         <token name="T_WHITESPACE"> </token>
@@ -244,7 +212,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="50">
+      <line no="52">
         <token name="T_WHITESPACE">            </token>
         <token name="T_THROW">throw</token>
         <token name="T_WHITESPACE"> </token>
@@ -254,32 +222,32 @@
         <token name="T_OPEN_BRACKET">(</token>
         <token name="T_VARIABLE">$this</token>
         <token name="T_OBJECT_OPERATOR">-&gt;</token>
-        <token name="T_STRING">iniFile</token>
+        <token name="T_STRING">yamlFile</token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="51">
+      <line no="53">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="52"/>
-      <line no="53">
+      <line no="54"/>
+      <line no="55">
         <token name="T_WHITESPACE">        </token>
         <token name="T_VARIABLE">$this</token>
         <token name="T_OBJECT_OPERATOR">-&gt;</token>
-        <token name="T_STRING">iniFile</token>
+        <token name="T_STRING">yamlFile</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_EQUAL">=</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_VARIABLE">$source</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="54">
+      <line no="56">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="55"/>
-      <line no="56">
+      <line no="57"/>
+      <line no="58">
         <token name="T_WHITESPACE">    </token>
         <token name="T_PUBLIC">public</token>
         <token name="T_WHITESPACE"> </token>
@@ -292,32 +260,26 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_ARRAY">array</token>
       </line>
-      <line no="57">
+      <line no="59">
         <token name="T_WHITESPACE">    </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="58">
+      <line no="60">
         <token name="T_WHITESPACE">        </token>
         <token name="T_VARIABLE">$data</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_EQUAL">=</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_NS_SEPARATOR">\</token>
-        <token name="T_STRING">parse_ini_file</token>
+        <token name="T_STRING">yaml_parse_file</token>
         <token name="T_OPEN_BRACKET">(</token>
         <token name="T_VARIABLE">$this</token>
         <token name="T_OBJECT_OPERATOR">-&gt;</token>
-        <token name="T_STRING">iniFile</token>
-        <token name="T_COMMA">,</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_STRING">true</token>
-        <token name="T_COMMA">,</token>
-        <token name="T_WHITESPACE"> </token>
-        <token name="T_STRING">INI_SCANNER_TYPED</token>
+        <token name="T_STRING">yamlFile</token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="59">
+      <line no="61">
         <token name="T_WHITESPACE">        </token>
         <token name="T_IF">if</token>
         <token name="T_WHITESPACE"> </token>
@@ -331,7 +293,7 @@
         <token name="T_WHITESPACE"> </token>
         <token name="T_OPEN_CURLY">{</token>
       </line>
-      <line no="60">
+      <line no="62">
         <token name="T_WHITESPACE">            </token>
         <token name="T_THROW">throw</token>
         <token name="T_WHITESPACE"> </token>
@@ -341,30 +303,30 @@
         <token name="T_OPEN_BRACKET">(</token>
         <token name="T_VARIABLE">$this</token>
         <token name="T_OBJECT_OPERATOR">-&gt;</token>
-        <token name="T_STRING">iniFile</token>
+        <token name="T_STRING">yamlFile</token>
         <token name="T_CLOSE_BRACKET">)</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="61">
+      <line no="63">
         <token name="T_WHITESPACE">        </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="62"/>
-      <line no="63">
+      <line no="64"/>
+      <line no="65">
         <token name="T_WHITESPACE">        </token>
         <token name="T_RETURN">return</token>
         <token name="T_WHITESPACE"> </token>
         <token name="T_VARIABLE">$data</token>
         <token name="T_SEMICOLON">;</token>
       </line>
-      <line no="64">
+      <line no="66">
         <token name="T_WHITESPACE">    </token>
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="65">
+      <line no="67">
         <token name="T_CLOSE_CURLY">}</token>
       </line>
-      <line no="66"/>
+      <line no="68"/>
     </source>
   </file>
 </phpunit>

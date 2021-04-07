@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tests>
-  <test className="PTK\Config\Test\ConfigLoaderTest" methodName="testLoadIniFile" prettifiedClassName="Config Loader (PTK\Config\Test\ConfigLoader)" prettifiedMethodName="Load ini file" status="0" time="0.0143783" size="-1" groups="Everton">
+  <test className="PTK\Config\Test\ConfigLoaderTest" methodName="testLoadIniFile" prettifiedClassName="Config Loader (PTK\Config\Test\ConfigLoader)" prettifiedMethodName="Load ini file" status="0" time="0.0097262" size="-1" groups="Everton">
     <group name="Everton"/>
   </test>
-  <test className="PTK\Config\Test\ConfigRepoTest" methodName="testGetMethodSuccess" prettifiedClassName="Config Repo (PTK\Config\Test\ConfigRepo)" prettifiedMethodName="Get method success" status="0" time="0.0020029" size="-1" groups="Everton">
+  <test className="PTK\Config\Test\ConfigRepoTest" methodName="testGetMethodSuccess" prettifiedClassName="Config Repo (PTK\Config\Test\ConfigRepo)" prettifiedMethodName="Get method success" status="0" time="0.0022807" size="-1" groups="Everton">
     <group name="Everton"/>
   </test>
-  <test className="PTK\Config\Test\ConfigRepoTest" methodName="testGetMagicMethodSuccess" prettifiedClassName="Config Repo (PTK\Config\Test\ConfigRepo)" prettifiedMethodName="Get magic method success" status="0" time="0.0008868" size="-1" groups="Everton">
+  <test className="PTK\Config\Test\ConfigRepoTest" methodName="testGetMagicMethodSuccess" prettifiedClassName="Config Repo (PTK\Config\Test\ConfigRepo)" prettifiedMethodName="Get magic method success" status="0" time="0.0008744" size="-1" groups="Everton">
     <group name="Everton"/>
   </test>
-  <test className="PTK\Config\Test\ConfigRepoTest" methodName="testListMethodSuccess" prettifiedClassName="Config Repo (PTK\Config\Test\ConfigRepo)" prettifiedMethodName="List method success" status="0" time="0.0034716" size="-1" groups="Everton">
+  <test className="PTK\Config\Test\ConfigRepoTest" methodName="testListMethodSuccess" prettifiedClassName="Config Repo (PTK\Config\Test\ConfigRepo)" prettifiedMethodName="List method success" status="0" time="0.0016013" size="-1" groups="Everton">
     <group name="Everton"/>
   </test>
 </tests>
