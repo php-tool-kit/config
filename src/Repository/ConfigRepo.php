@@ -32,7 +32,7 @@ declare(strict_types=1);
 
 namespace PTK\Config\Repository;
 
-use UnexpectedValueException;
+use OutOfBoundsException;
 
 /**
  * Repositório de configurações. Um repositório de configurações é um objeto que retorna as configurações.
@@ -71,7 +71,7 @@ class ConfigRepo implements ConfigRepoInterface
             return $this->repo[$key];
         }
 
-        throw new UnexpectedValueException($key);
+        throw new OutOfBoundsException($key);
     }
 
     public function list(): array

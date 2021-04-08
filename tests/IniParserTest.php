@@ -26,11 +26,10 @@
 
 namespace PTK\Config\Test;
 
+use PHPUnit\Framework\TestCase;
 use PTK\Config\Loader\ConfigLoader;
 use PTK\Config\Test\TestToolTrait;
-use PHPUnit\Framework\TestCase;
-use UnexpectedValueException;
-use Exception;
+use PTK\Exception\ResourceException\InvalidResourceException;
 
 /**
  * Description of ConfLoaderTest
@@ -42,7 +41,7 @@ class IniParserTest extends TestCase {
     
     public function testSourceNotExist(): void
     {
-        $this->expectException(UnexpectedValueException::class);
+        $this->expectException(InvalidResourceException::class);
         $config = ConfigLoader::load('unknow.ini');
     }
     

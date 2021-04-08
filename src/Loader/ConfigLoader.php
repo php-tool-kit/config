@@ -38,7 +38,7 @@ use PTK\Config\Parser\ParserInterface;
 use PTK\Config\Parser\YamlParser;
 use PTK\Config\Repository\ConfigRepo;
 use PTK\Config\Repository\ConfigRepoInterface;
-use UnexpectedValueException;
+use PTK\Exception\ResourceException\InvalidResourceException;
 
 /**
  * Loader de configurações.
@@ -59,7 +59,6 @@ class ConfigLoader
      *  arquivos suportados ou DSN para conexão a bancos de dados (se suportado).
      * @return ConfigRepoInterface Um objeto com as configurações carregadas.
      */
-//    public static function load(string ...$source): ConfigRepoInterface {
     public static function load(string ...$source): ConfigRepoInterface
     {
         //cria o indexer padrão
@@ -90,7 +89,7 @@ class ConfigLoader
      *
      * @param string $source
      * @return ParserInterface
-     * @throws UnexpectedValueException
+     * @throws InvalidResourceException
      */
     protected static function dectectParser(string $source): ParserInterface
     {
@@ -106,6 +105,6 @@ class ConfigLoader
             return new YamlParser($source);
         }
 
-        throw new UnexpectedValueException($source);
+        throw new InvalidResourceException($source);
     }
 }

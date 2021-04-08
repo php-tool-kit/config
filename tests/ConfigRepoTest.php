@@ -29,7 +29,7 @@ namespace PTK\Config\Test;
 use PTK\Config\Loader\ConfigLoader;
 use PTK\Config\Test\TestToolTrait;
 use PHPUnit\Framework\TestCase;
-use UnexpectedValueException;
+use OutOfBoundsException;
 
 /**
  * Description of ConfLoaderTest
@@ -54,7 +54,7 @@ class ConfigRepoTest extends TestCase {
     public function testUnexpectedKey(): void
     {
         $config = ConfigLoader::load($this->iniFile);
-        $this->expectException(UnexpectedValueException::class);
+        $this->expectException(OutOfBoundsException::class);
         $config->get('unknow.key');
     }
     

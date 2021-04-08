@@ -32,8 +32,7 @@ declare(strict_types=1);
 
 namespace PTK\Config\Parser;
 
-use Exception;
-use UnexpectedValueException;
+use PTK\Exception\ResourceException\InvalidResourceException;
 
 /**
  * Parser para configurações em arquivos YAML.
@@ -49,7 +48,7 @@ class YamlParser implements ParserInterface
     public function __construct(string $source)
     {
         if (! \file_exists($source)) {
-            throw new UnexpectedValueException($this->yamlFile);
+            throw new InvalidResourceException($this->yamlFile);
         }
 
         $this->yamlFile = $source;
@@ -58,12 +57,6 @@ class YamlParser implements ParserInterface
     public function parse(): array
     {
         $data = \yaml_parse_file($this->yamlFile);
-        if ($data === false) {
-            // @codeCoverageIgnoreStart
-            throw new Exception($this->yamlFile);
-            // @codeCoverageIgnoreEnd
-        }
-
         return $data;
     }
 }

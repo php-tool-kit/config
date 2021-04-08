@@ -22,7 +22,8 @@
         "php": ">=7.4.12",
         "ext-mbstring": "*",
         "ext-yaml": "*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "php-tool-kit/exception": "9999999-dev"
     },
     "autoload": {
         "psr-4": {

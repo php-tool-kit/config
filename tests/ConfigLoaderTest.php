@@ -30,7 +30,7 @@ use PHPUnit\Framework\TestCase;
 use PTK\Config\Loader\ConfigLoader;
 use PTK\Config\Repository\ConfigRepo;
 use PTK\Config\Test\TestToolTrait;
-use UnexpectedValueException;
+use PTK\Exception\ResourceException\InvalidResourceException;
 
 /**
  * Description of ConfLoaderTest
@@ -66,7 +66,7 @@ class ConfigLoaderTest extends TestCase {
     
     public function testUnexpectedParser(): void
     {
-        $this->expectException(UnexpectedValueException::class);
+        $this->expectException(InvalidResourceException::class);
         $config = ConfigLoader::load('unknow.parser');
     }
 }
