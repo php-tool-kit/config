@@ -4,7 +4,7 @@
     "type": "library",
     "keywords": ["config", "configuration"],
     "readme": "README.md",
-    "license": "MIT Licence",
+    "license": "MIT",
     "authors": [
         {
             "name": "Everton da Rosa",
