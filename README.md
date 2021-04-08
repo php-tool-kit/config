@@ -8,7 +8,7 @@
 Recomendamos apenas a instalação via [Composer](https://getcomposer.org).
 
 ```bash
-composer require php-tool-kit/config
+composer require php-tool-kit/conf-mgr
 ```
 
 ## Uso
