@@ -15,7 +15,7 @@
             <source dsn="../">
                 <path>src</path>
             </source>
-            <visibility>private</visibility>
+            <!--<visibility>private</visibility>-->
             <default-package-name>ConfMgr</default-package-name>
             <include-source>true</include-source>
             <markers>

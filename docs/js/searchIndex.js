@@ -6,40 +6,150 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PTK-Config-Indexer-IndexerInterface.html"
         },                {
+            "fqsen": "\\PTK\\Config\\Indexer\\IndexerInterface\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "Gera\u0020o\u0020\u00EDndice\u0020de\u0020chaves\u0020e\u0020valores\u0020de\u0020configura\u00E7\u00E3o.",
+            "url": "classes/PTK-Config-Indexer-IndexerInterface.html#method_index"
+        },                {
             "fqsen": "\\PTK\\Config\\Indexer\\StringKeyIndexer",
             "name": "StringKeyIndexer",
             "summary": "Description\u0020of\u0020StringKeyIndexer",
             "url": "classes/PTK-Config-Indexer-StringKeyIndexer.html"
+        },                {
+            "fqsen": "\\PTK\\Config\\Indexer\\StringKeyIndexer\u003A\u003A\u0024index",
+            "name": "index",
+            "summary": "",
+            "url": "classes/PTK-Config-Indexer-StringKeyIndexer.html#property_index"
+        },                {
+            "fqsen": "\\PTK\\Config\\Indexer\\StringKeyIndexer\u003A\u003Arecursive\u0028\u0029",
+            "name": "recursive",
+            "summary": "M\u00E9todo\u0020auxiliar.",
+            "url": "classes/PTK-Config-Indexer-StringKeyIndexer.html#method_recursive"
         },                {
             "fqsen": "\\PTK\\Config\\Loader\\ConfigLoader",
             "name": "ConfigLoader",
             "summary": "Loader\u0020de\u0020configura\u00E7\u00F5es.",
             "url": "classes/PTK-Config-Loader-ConfigLoader.html"
         },                {
+            "fqsen": "\\PTK\\Config\\Loader\\ConfigLoader\u003A\u003Aload\u0028\u0029",
+            "name": "load",
+            "summary": "Carrega\u0020as\u0020configura\u00E7\u00F5es.",
+            "url": "classes/PTK-Config-Loader-ConfigLoader.html#method_load"
+        },                {
+            "fqsen": "\\PTK\\Config\\Loader\\ConfigLoader\u003A\u003AdectectParser\u0028\u0029",
+            "name": "dectectParser",
+            "summary": "Detecta\u0020qual\u0020parser\u0020\u00E9\u0020o\u0020adequado\u0020de\u0020acordo\u0020com\u0020o\u0020conte\u00FAdo\u0020de\u0020\u0024source.",
+            "url": "classes/PTK-Config-Loader-ConfigLoader.html#method_dectectParser"
+        },                {
             "fqsen": "\\PTK\\Config\\Parser\\IniParser",
             "name": "IniParser",
             "summary": "Parser\u0020para\u0020configura\u00E7\u00F5es\u0020em\u0020arquivos\u0020INI.",
             "url": "classes/PTK-Config-Parser-IniParser.html"
+        },                {
+            "fqsen": "\\PTK\\Config\\Parser\\IniParser\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Construtor.",
+            "url": "classes/PTK-Config-Parser-IniParser.html#method___construct"
+        },                {
+            "fqsen": "\\PTK\\Config\\Parser\\IniParser\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "Extrai\u0020as\u0020configura\u00E7\u00F5es.",
+            "url": "classes/PTK-Config-Parser-IniParser.html#method_parse"
+        },                {
+            "fqsen": "\\PTK\\Config\\Parser\\IniParser\u003A\u003A\u0024iniFile",
+            "name": "iniFile",
+            "summary": "",
+            "url": "classes/PTK-Config-Parser-IniParser.html#property_iniFile"
         },                {
             "fqsen": "\\PTK\\Config\\Parser\\ParserInterface",
             "name": "ParserInterface",
             "summary": "",
             "url": "classes/PTK-Config-Parser-ParserInterface.html"
         },                {
+            "fqsen": "\\PTK\\Config\\Parser\\ParserInterface\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Construtor.",
+            "url": "classes/PTK-Config-Parser-ParserInterface.html#method___construct"
+        },                {
+            "fqsen": "\\PTK\\Config\\Parser\\ParserInterface\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "Extrai\u0020as\u0020configura\u00E7\u00F5es.",
+            "url": "classes/PTK-Config-Parser-ParserInterface.html#method_parse"
+        },                {
             "fqsen": "\\PTK\\Config\\Parser\\YamlParser",
             "name": "YamlParser",
             "summary": "Parser\u0020para\u0020configura\u00E7\u00F5es\u0020em\u0020arquivos\u0020YAML.",
             "url": "classes/PTK-Config-Parser-YamlParser.html"
+        },                {
+            "fqsen": "\\PTK\\Config\\Parser\\YamlParser\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Construtor.",
+            "url": "classes/PTK-Config-Parser-YamlParser.html#method___construct"
+        },                {
+            "fqsen": "\\PTK\\Config\\Parser\\YamlParser\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "Extrai\u0020as\u0020configura\u00E7\u00F5es.",
+            "url": "classes/PTK-Config-Parser-YamlParser.html#method_parse"
+        },                {
+            "fqsen": "\\PTK\\Config\\Parser\\YamlParser\u003A\u003A\u0024yamlFile",
+            "name": "yamlFile",
+            "summary": "",
+            "url": "classes/PTK-Config-Parser-YamlParser.html#property_yamlFile"
         },                {
             "fqsen": "\\PTK\\Config\\Repository\\ConfigRepo",
             "name": "ConfigRepo",
             "summary": "Reposit\u00F3rio\u0020de\u0020configura\u00E7\u00F5es.\u0020Um\u0020reposit\u00F3rio\u0020de\u0020configura\u00E7\u00F5es\u0020\u00E9\u0020um\u0020objeto\u0020que\u0020retorna\u0020as\u0020configura\u00E7\u00F5es.",
             "url": "classes/PTK-Config-Repository-ConfigRepo.html"
         },                {
+            "fqsen": "\\PTK\\Config\\Repository\\ConfigRepo\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Construtor.\u0020Embora\u0020seja\u0020p\u00FAblico,\u0020\u00E9\u0020usado\u0020por\u0020\\Config\\Loader\\ConfigLoader\u0020e\u0020n\u00E3o\u0020\u00E9\u0020recomendado\u0020a\n\u0020instancia\u00E7\u00E3o\u0020direta.",
+            "url": "classes/PTK-Config-Repository-ConfigRepo.html#method___construct"
+        },                {
+            "fqsen": "\\PTK\\Config\\Repository\\ConfigRepo\u003A\u003A__get\u0028\u0029",
+            "name": "__get",
+            "summary": "M\u00E9todo\u0020m\u00E1gico\u0020para\u0020acesso\u0020direto\u0020da\u0020configura\u00E7\u00E3o\u0020simulando\u0020propriedades\u0020p\u00FAblicas.",
+            "url": "classes/PTK-Config-Repository-ConfigRepo.html#method___get"
+        },                {
+            "fqsen": "\\PTK\\Config\\Repository\\ConfigRepo\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Getter\u0020de\u0020configura\u00E7\u00F5es.",
+            "url": "classes/PTK-Config-Repository-ConfigRepo.html#method_get"
+        },                {
+            "fqsen": "\\PTK\\Config\\Repository\\ConfigRepo\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "Lista\u0020todas\u0020as\u0020configura\u00E7\u00F5es\u0020no\u0020formato\u0020chave\u003D\u003Evalor\u0020com\u0020as\u0020chaves\u0020geradas\u0020conforme\n\u0020Config\\Indexer\\IndexerInterface",
+            "url": "classes/PTK-Config-Repository-ConfigRepo.html#method_list"
+        },                {
+            "fqsen": "\\PTK\\Config\\Repository\\ConfigRepo\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "classes/PTK-Config-Repository-ConfigRepo.html#property_repo"
+        },                {
             "fqsen": "\\PTK\\Config\\Repository\\ConfigRepoInterface",
             "name": "ConfigRepoInterface",
             "summary": "Interface\u0020\u0020para\u0020o\u0020reposit\u00F3rio\u0020de\u0020configura\u00E7\u00F5es.",
             "url": "classes/PTK-Config-Repository-ConfigRepoInterface.html"
+        },                {
+            "fqsen": "\\PTK\\Config\\Repository\\ConfigRepoInterface\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Construtor.\u0020Embora\u0020seja\u0020p\u00FAblico,\u0020\u00E9\u0020usado\u0020por\u0020\\Config\\Loader\\ConfigLoader\u0020e\u0020n\u00E3o\u0020\u00E9\u0020recomendado\u0020a\n\u0020instancia\u00E7\u00E3o\u0020direta.",
+            "url": "classes/PTK-Config-Repository-ConfigRepoInterface.html#method___construct"
+        },                {
+            "fqsen": "\\PTK\\Config\\Repository\\ConfigRepoInterface\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Getter\u0020de\u0020configura\u00E7\u00F5es.",
+            "url": "classes/PTK-Config-Repository-ConfigRepoInterface.html#method_get"
+        },                {
+            "fqsen": "\\PTK\\Config\\Repository\\ConfigRepoInterface\u003A\u003A__get\u0028\u0029",
+            "name": "__get",
+            "summary": "M\u00E9todo\u0020m\u00E1gico\u0020para\u0020acesso\u0020direto\u0020da\u0020configura\u00E7\u00E3o\u0020simulando\u0020propriedades\u0020p\u00FAblicas.",
+            "url": "classes/PTK-Config-Repository-ConfigRepoInterface.html#method___get"
+        },                {
+            "fqsen": "\\PTK\\Config\\Repository\\ConfigRepoInterface\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "Lista\u0020todas\u0020as\u0020configura\u00E7\u00F5es\u0020no\u0020formato\u0020chave\u003D\u003Evalor\u0020com\u0020as\u0020chaves\u0020geradas\u0020conforme\n\u0020Config\\Indexer\\IndexerInterface",
+            "url": "classes/PTK-Config-Repository-ConfigRepoInterface.html#method_list"
         },                {
             "fqsen": "\\",
             "name": "\\",
