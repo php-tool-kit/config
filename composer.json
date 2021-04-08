@@ -1,5 +1,5 @@
 {
-    "name": "php-tool-kit/conf-mgr",
+    "name": "php-tool-kit/config",
     "description": "Configuration Manager in PHP.",
     "type": "library",
     "keywords": ["config", "configuration"],
